@@ -1,30 +1,38 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:gplx_app/main.dart';
+import 'package:gplx_app/app/app.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('mở app thấy tab Trang chủ, bấm chuyển được sang 4 tab còn lại', (
+    tester,
+  ) async {
+    await tester.pumpWidget(const GplxApp());
+    await tester.pumpAndSettle();
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // mở app là ở tab Trang chủ
+    expect(find.byType(NavigationBar), findsOneWidget);
+    expect(
+      find.text('Lộ trình hôm nay, chuỗi ngày học (ngày 13)'),
+      findsOneWidget,
+    );
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // bấm từng tab rồi kiểm tra đúng màn hình
+    final tabs = {
+      'Học': 'Học theo chủ đề, câu điểm liệt, sổ câu sai (ngày 11)',
+      'Thi thử': 'Thi thử theo đề, xem lịch sử (ngày 12)',
+      'Tra cứu': 'Tra cứu biển báo, mức phạt (ngày 13)',
+      'Cá nhân': 'Đăng nhập, cài đặt, đồng bộ (ngày 14, 16)',
+    };
+    for (final entry in tabs.entries) {
+      // tên tab xuất hiện ở thanh dưới và ở AppBar -> lấy cái trong NavigationBar
+      await tester.tap(
+        find.descendant(
+          of: find.byType(NavigationBar),
+          matching: find.text(entry.key),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(find.text(entry.value), findsOneWidget);
+    }
   });
 }
