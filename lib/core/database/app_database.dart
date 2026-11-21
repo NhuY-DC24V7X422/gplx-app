@@ -3,8 +3,6 @@ import 'package:drift_flutter/drift_flutter.dart';
 
 part 'app_database.g.dart';
 
-
-
 class Questions extends Table {
   TextColumn get id => text()(); // trùng _id trên MongoDB
   IntColumn get number => integer().unique()(); // số câu 1..600

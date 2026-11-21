@@ -13,7 +13,7 @@ class CatalogRepository {
 
   final AppDatabase db;
 
-  // Nạp gói dữ liệu 
+  // Nạp gói dữ liệu
   // bundled = true: gói đóng kèm trong app (assets/catalog/catalog.json),
   // ảnh nằm sẵn trong assets nên không cần tải.
   Future<void> importBundle(

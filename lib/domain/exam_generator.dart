@@ -20,7 +20,7 @@ class GeneratedExam<Q extends GenQuestion> {
   final List<String> warnings;
 }
 
-// Random có seed (mulberry32) 
+// Random có seed (mulberry32)
 // Giống hệt seededRandom bên TS: cùng seed thì app và server ra cùng dãy số,
 // nên cùng seed sẽ ra cùng 1 đề.
 // JS tính trên số nguyên 32 bit, Dart là 64 bit nên phải tự cắt về 32 bit (& _mask32).

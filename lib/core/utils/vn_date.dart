@@ -25,6 +25,16 @@ String addDays(String day, int n) {
   return _format(_parseDay(day).add(Duration(days: n)));
 }
 
+// Hôm nay theo giờ Việt Nam
+String vnToday() => vnDay(DateTime.now());
+
+// Hiển thị ngày cho người dùng: '2026-12-20' -> '20/12/2026'
+String formatDayVi(String day) {
+  final parts = day.split('-');
+  if (parts.length != 3) return day;
+  return '${parts[2]}/${parts[1]}/${parts[0]}';
+}
+
 // Số ngày từ a đến b (b - a)
 int diffDays(String a, String b) {
   return _parseDay(b).difference(_parseDay(a)).inDays;
