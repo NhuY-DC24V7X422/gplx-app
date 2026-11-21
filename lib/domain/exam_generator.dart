@@ -3,7 +3,7 @@ import 'exam_config.dart';
 // Sinh đề thi. Port từ gplx-api/src/domain/exam-generator.ts.
 
 // Thông tin tối thiểu của 1 câu hỏi để sinh đề.
-// Class câu hỏi thật (ngày 9) chỉ cần implements cái này là dùng được.
+
 abstract class GenQuestion {
   int get number;
   String get categoryCode;
@@ -20,7 +20,7 @@ class GeneratedExam<Q extends GenQuestion> {
   final List<String> warnings;
 }
 
-// ----- Random có seed (mulberry32) -----
+// Random có seed (mulberry32) 
 // Giống hệt seededRandom bên TS: cùng seed thì app và server ra cùng dãy số,
 // nên cùng seed sẽ ra cùng 1 đề.
 // JS tính trên số nguyên 32 bit, Dart là 64 bit nên phải tự cắt về 32 bit (& _mask32).

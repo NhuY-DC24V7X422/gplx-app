@@ -12,7 +12,7 @@ class StreakResult {
   final int longest; // chuỗi dài nhất từ trước tới nay
 }
 
-// dayCounts: số câu đã trả lời mỗi ngày, vd { '2026-10-20': 15 }
+// dayCounts: số câu đã trả lời mỗi ngày
 StreakResult computeStreak(Map<String, int> dayCounts, String today) {
   // gom các ngày đủ số câu
   final days = <String>{};

@@ -1,8 +1,4 @@
 // Bỏ dấu tiếng Việt để tìm kiếm: "Cấm đi ngược chiều" -> "cam di nguoc chieu"
-// Phải ra cùng kết quả với gplx-api/src/domain/normalize-vi.ts.
-//
-// Bên TS dùng normalize('NFD') để tách dấu, Dart không có hàm này
-// nên mình dùng bảng: mỗi chữ có dấu ở _from ứng với chữ không dấu cùng vị trí ở _to.
 
 const _from =
     'àáạảãâầấậẩẫăằắặẳẵ'

@@ -1,0 +1,2410 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "sinceVersion": 0,
+  "generatedAt": "2026-11-14T16:56:56.854Z",
+  "dataset": "sample",
+  "licenseClasses": [
+    {
+      "code": "A1",
+      "name": "Hạng A1",
+      "description": "Xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc công suất động cơ điện đến 11 kW.",
+      "order": 1,
+      "examConfig": {
+        "totalQuestions": 25,
+        "passScore": 21,
+        "durationMinutes": 19,
+        "slots": [
+          {
+            "label": "Quy định chung, quy tắc giao thông",
+            "categoryCodes": [
+              "RULES"
+            ],
+            "critical": false,
+            "count": 8
+          },
+          {
+            "label": "Tình huống mất an toàn giao thông nghiêm trọng",
+            "categoryCodes": [],
+            "critical": true,
+            "count": 1
+          },
+          {
+            "label": "Văn hóa giao thông, đạo đức người lái xe",
+            "categoryCodes": [
+              "CULTURE"
+            ],
+            "critical": false,
+            "count": 1
+          },
+          {
+            "label": "Kỹ thuật lái xe hoặc cấu tạo sửa chữa",
+            "categoryCodes": [
+              "DRIVING",
+              "MECHANICS"
+            ],
+            "critical": false,
+            "count": 1
+          },
+          {
+            "label": "Báo hiệu đường bộ",
+            "categoryCodes": [
+              "SIGNS"
+            ],
+            "critical": false,
+            "count": 8
+          },
+          {
+            "label": "Sa hình, kỹ năng xử lý tình huống",
+            "categoryCodes": [
+              "SITUATION"
+            ],
+            "critical": false,
+            "count": 6
+          }
+        ]
+      },
+      "version": 1
+    },
+    {
+      "code": "A",
+      "name": "Hạng A",
+      "description": "Xe mô tô hai bánh có dung tích xi-lanh trên 125 cm3 hoặc công suất động cơ điện trên 11 kW. CẤU HÌNH ĐỀ TẠM THỜI – cần đối chiếu Công văn 2262.",
+      "order": 2,
+      "examConfig": {
+        "totalQuestions": 25,
+        "passScore": 23,
+        "durationMinutes": 19,
+        "slots": [
+          {
+            "label": "Quy định chung, quy tắc giao thông",
+            "categoryCodes": [
+              "RULES"
+            ],
+            "critical": false,
+            "count": 8
+          },
+          {
+            "label": "Tình huống mất an toàn giao thông nghiêm trọng",
+            "categoryCodes": [],
+            "critical": true,
+            "count": 1
+          },
+          {
+            "label": "Văn hóa giao thông, đạo đức người lái xe",
+            "categoryCodes": [
+              "CULTURE"
+            ],
+            "critical": false,
+            "count": 1
+          },
+          {
+            "label": "Kỹ thuật lái xe hoặc cấu tạo sửa chữa",
+            "categoryCodes": [
+              "DRIVING",
+              "MECHANICS"
+            ],
+            "critical": false,
+            "count": 1
+          },
+          {
+            "label": "Báo hiệu đường bộ",
+            "categoryCodes": [
+              "SIGNS"
+            ],
+            "critical": false,
+            "count": 8
+          },
+          {
+            "label": "Sa hình, kỹ năng xử lý tình huống",
+            "categoryCodes": [
+              "SITUATION"
+            ],
+            "critical": false,
+            "count": 6
+          }
+        ]
+      },
+      "version": 1
+    },
+    {
+      "code": "B",
+      "name": "Hạng B",
+      "description": "Xe ô tô chở người đến 8 chỗ (không kể chỗ người lái) và xe tải có khối lượng toàn bộ theo thiết kế đến 3.500 kg. CẤU HÌNH ĐỀ TẠM THỜI – cần đối chiếu Công văn 2262.",
+      "order": 3,
+      "examConfig": {
+        "totalQuestions": 30,
+        "passScore": 27,
+        "durationMinutes": 20,
+        "slots": [
+          {
+            "label": "Quy định chung, quy tắc giao thông",
+            "categoryCodes": [
+              "RULES"
+            ],
+            "critical": false,
+            "count": 9
+          },
+          {
+            "label": "Tình huống mất an toàn giao thông nghiêm trọng",
+            "categoryCodes": [],
+            "critical": true,
+            "count": 1
+          },
+          {
+            "label": "Văn hóa giao thông, đạo đức người lái xe",
+            "categoryCodes": [
+              "CULTURE"
+            ],
+            "critical": false,
+            "count": 1
+          },
+          {
+            "label": "Kỹ thuật lái xe",
+            "categoryCodes": [
+              "DRIVING"
+            ],
+            "critical": false,
+            "count": 2
+          },
+          {
+            "label": "Cấu tạo và sửa chữa",
+            "categoryCodes": [
+              "MECHANICS"
+            ],
+            "critical": false,
+            "count": 1
+          },
+          {
+            "label": "Báo hiệu đường bộ",
+            "categoryCodes": [
+              "SIGNS"
+            ],
+            "critical": false,
+            "count": 9
+          },
+          {
+            "label": "Sa hình, kỹ năng xử lý tình huống",
+            "categoryCodes": [
+              "SITUATION"
+            ],
+            "critical": false,
+            "count": 7
+          }
+        ]
+      },
+      "version": 1
+    }
+  ],
+  "categories": [
+    {
+      "code": "RULES",
+      "name": "Khái niệm và quy tắc giao thông đường bộ",
+      "order": 1,
+      "version": 1
+    },
+    {
+      "code": "CULTURE",
+      "name": "Văn hóa giao thông, đạo đức người lái xe",
+      "order": 2,
+      "version": 1
+    },
+    {
+      "code": "DRIVING",
+      "name": "Kỹ thuật lái xe",
+      "order": 3,
+      "version": 1
+    },
+    {
+      "code": "MECHANICS",
+      "name": "Cấu tạo và sửa chữa",
+      "order": 4,
+      "version": 1
+    },
+    {
+      "code": "SIGNS",
+      "name": "Báo hiệu đường bộ",
+      "order": 5,
+      "version": 1
+    },
+    {
+      "code": "SITUATION",
+      "name": "Sa hình và kỹ năng xử lý tình huống",
+      "order": 6,
+      "version": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "000000000000000000000001",
+      "number": 1,
+      "content": "Người điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+      "searchText": "nguoi dieu khien phuong tien tham gia giao thong duong bo ma trong mau hoac hoi tho co nong do con co bi nghiem cam khong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Bị nghiêm cấm."
+        },
+        {
+          "key": "2",
+          "text": "Không bị nghiêm cấm."
+        },
+        {
+          "key": "3",
+          "text": "Không bị nghiêm cấm nếu nồng độ cồn ở mức thấp."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Luật Trật tự, an toàn giao thông đường bộ 2024 nghiêm cấm điều khiển phương tiện khi trong máu hoặc hơi thở có nồng độ cồn, không phân biệt mức độ.",
+      "legalRef": "Luật Trật tự, an toàn giao thông đường bộ 2024",
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": true,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000002",
+      "number": 2,
+      "content": "Hành vi điều khiển xe chạy quá tốc độ quy định, lạng lách, đánh võng có bị nghiêm cấm không?",
+      "searchText": "hanh vi dieu khien xe chay qua toc do quy dinh, lang lach, danh vong co bi nghiem cam khong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Không bị nghiêm cấm khi đường vắng."
+        },
+        {
+          "key": "2",
+          "text": "Bị nghiêm cấm."
+        },
+        {
+          "key": "3",
+          "text": "Chỉ bị nghiêm cấm trong khu dân cư."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Lạng lách, đánh võng, chạy quá tốc độ quy định là hành vi bị nghiêm cấm ở mọi nơi vì gây nguy hiểm nghiêm trọng.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": true,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000003",
+      "number": 3,
+      "content": "Khi gây tai nạn giao thông, người điều khiển phương tiện có được bỏ trốn để trốn tránh trách nhiệm không?",
+      "searchText": "khi gay tai nan giao thong, nguoi dieu khien phuong tien co duoc bo tron de tron tranh trach nhiem khong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Được bỏ trốn nếu không ai nhìn thấy."
+        },
+        {
+          "key": "2",
+          "text": "Không được bỏ trốn; phải dừng lại, giữ nguyên hiện trường, cấp cứu người bị nạn và báo cơ quan có thẩm quyền."
+        },
+        {
+          "key": "3",
+          "text": "Được rời đi nếu thiệt hại nhỏ."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Bỏ trốn sau khi gây tai nạn là hành vi bị nghiêm cấm. Người gây tai nạn phải dừng xe, giữ hiện trường, cấp cứu và trình báo.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": true,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000004",
+      "number": 4,
+      "content": "Khi gặp đèn tín hiệu màu đỏ, người điều khiển phương tiện phải làm gì?",
+      "searchText": "khi gap den tin hieu mau do, nguoi dieu khien phuong tien phai lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Được đi nếu không có xe khác."
+        },
+        {
+          "key": "2",
+          "text": "Phải dừng lại trước vạch dừng."
+        },
+        {
+          "key": "3",
+          "text": "Giảm tốc độ rồi đi tiếp."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Tín hiệu đỏ là cấm đi; phải dừng trước vạch dừng.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000005",
+      "number": 5,
+      "content": "Khi gặp đèn tín hiệu màu vàng (không nhấp nháy), người điều khiển phương tiện phải làm gì?",
+      "searchText": "khi gap den tin hieu mau vang (khong nhap nhay), nguoi dieu khien phuong tien phai lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Tăng tốc để đi qua nhanh."
+        },
+        {
+          "key": "2",
+          "text": "Phải dừng lại trước vạch dừng, trừ trường hợp đã đi quá vạch dừng thì được đi tiếp."
+        },
+        {
+          "key": "3",
+          "text": "Được đi bình thường."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Tín hiệu vàng báo hiệu thay đổi tín hiệu; phải dừng trước vạch dừng, nếu đã đi quá vạch thì được đi tiếp.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000006",
+      "number": 6,
+      "content": "Khi có cảnh sát giao thông điều khiển giao thông tại nơi giao nhau có đèn tín hiệu, người tham gia giao thông phải chấp hành theo hiệu lệnh nào?",
+      "searchText": "khi co canh sat giao thong dieu khien giao thong tai noi giao nhau co den tin hieu, nguoi tham gia giao thong phai chap hanh theo hieu lenh nao?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Hiệu lệnh của đèn tín hiệu."
+        },
+        {
+          "key": "2",
+          "text": "Hiệu lệnh của người điều khiển giao thông."
+        },
+        {
+          "key": "3",
+          "text": "Biển báo hiệu."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Hiệu lệnh của người điều khiển giao thông có thứ tự ưu tiên cao nhất trong hệ thống báo hiệu đường bộ.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000007",
+      "number": 7,
+      "content": "Người điều khiển xe mô tô, xe gắn máy có bắt buộc phải đội mũ bảo hiểm và cài quai đúng quy cách không?",
+      "searchText": "nguoi dieu khien xe mo to, xe gan may co bat buoc phai doi mu bao hiem va cai quai dung quy cach khong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Bắt buộc."
+        },
+        {
+          "key": "2",
+          "text": "Chỉ bắt buộc khi đi đường dài."
+        },
+        {
+          "key": "3",
+          "text": "Không bắt buộc trong khu dân cư."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Người điều khiển và người ngồi trên xe mô tô, xe gắn máy phải đội mũ bảo hiểm và cài quai đúng quy cách.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000008",
+      "number": 8,
+      "content": "Người điều khiển phương tiện có được sử dụng điện thoại di động (cầm tay) khi xe đang chạy trên đường không?",
+      "searchText": "nguoi dieu khien phuong tien co duoc su dung dien thoai di dong (cam tay) khi xe dang chay tren duong khong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Được sử dụng khi đường vắng."
+        },
+        {
+          "key": "2",
+          "text": "Không được sử dụng."
+        },
+        {
+          "key": "3",
+          "text": "Được sử dụng để nghe gọi ngắn."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Sử dụng điện thoại cầm tay khi điều khiển phương tiện làm mất tập trung và bị cấm.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000009",
+      "number": 9,
+      "content": "Khi muốn chuyển hướng, người điều khiển phương tiện phải làm gì?",
+      "searchText": "khi muon chuyen huong, nguoi dieu khien phuong tien phai lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Chuyển hướng ngay, không cần báo hiệu."
+        },
+        {
+          "key": "2",
+          "text": "Giảm tốc độ, có tín hiệu báo hướng rẽ và quan sát an toàn trước khi chuyển hướng."
+        },
+        {
+          "key": "3",
+          "text": "Bấm còi liên tục rồi chuyển hướng."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Trước khi chuyển hướng phải giảm tốc độ, bật tín hiệu báo rẽ và bảo đảm an toàn cho các phương tiện khác.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000000a",
+      "number": 10,
+      "content": "Khi vượt xe khác, người điều khiển phương tiện phải vượt về phía nào?",
+      "searchText": "khi vuot xe khac, nguoi dieu khien phuong tien phai vuot ve phia nao?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Bên trái."
+        },
+        {
+          "key": "2",
+          "text": "Bên phải."
+        },
+        {
+          "key": "3",
+          "text": "Bên nào cũng được."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Nguyên tắc chung là vượt về phía bên trái của xe bị vượt, trừ các trường hợp được phép vượt bên phải theo quy định.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000000b",
+      "number": 11,
+      "content": "Người điều khiển phương tiện có được dừng xe, đỗ xe trên phần đường dành cho người đi bộ qua đường không?",
+      "searchText": "nguoi dieu khien phuong tien co duoc dung xe, do xe tren phan duong danh cho nguoi di bo qua duong khong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Được dừng trong thời gian ngắn."
+        },
+        {
+          "key": "2",
+          "text": "Không được dừng, đỗ xe."
+        },
+        {
+          "key": "3",
+          "text": "Được đỗ vào ban đêm."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Không được dừng, đỗ xe trên phần đường dành cho người đi bộ qua đường.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000000c",
+      "number": 12,
+      "content": "Khi xe ưu tiên đang làm nhiệm vụ phát tín hiệu ưu tiên, người tham gia giao thông phải làm gì?",
+      "searchText": "khi xe uu tien dang lam nhiem vu phat tin hieu uu tien, nguoi tham gia giao thong phai lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Tiếp tục đi bình thường."
+        },
+        {
+          "key": "2",
+          "text": "Giảm tốc độ, đi sát về bên phải hoặc dừng lại để nhường đường."
+        },
+        {
+          "key": "3",
+          "text": "Bám theo sau xe ưu tiên để đi nhanh hơn."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Khi có tín hiệu của xe ưu tiên, phải nhanh chóng giảm tốc độ, tránh hoặc dừng sát lề đường bên phải để nhường đường; không được gây cản trở.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000000d",
+      "number": 13,
+      "content": "Người điều khiển xe mô tô hai bánh có được chở theo từ hai người trở lên (trừ trường hợp được phép) không?",
+      "searchText": "nguoi dieu khien xe mo to hai banh co duoc cho theo tu hai nguoi tro len (tru truong hop duoc phep) khong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Được chở nếu đi chậm."
+        },
+        {
+          "key": "2",
+          "text": "Không được, trừ một số trường hợp đặc biệt theo quy định như chở người bệnh đi cấp cứu, trẻ em dưới 12 tuổi."
+        },
+        {
+          "key": "3",
+          "text": "Được chở tối đa ba người."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Xe mô tô hai bánh chỉ được chở một người, trừ các trường hợp đặc biệt được pháp luật cho phép.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000000e",
+      "number": 14,
+      "content": "Trên đường có nhiều làn đường cho xe đi cùng chiều, khi muốn chuyển làn người điều khiển phương tiện phải làm gì?",
+      "searchText": "tren duong co nhieu lan duong cho xe di cung chieu, khi muon chuyen lan nguoi dieu khien phuong tien phai lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Chuyển làn ở bất kỳ vị trí nào."
+        },
+        {
+          "key": "2",
+          "text": "Chỉ chuyển làn ở nơi cho phép, có tín hiệu báo trước và bảo đảm an toàn."
+        },
+        {
+          "key": "3",
+          "text": "Chuyển làn liên tục để vượt xe."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Chỉ được chuyển làn ở nơi cho phép, phải có tín hiệu báo trước và bảo đảm an toàn.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000000f",
+      "number": 15,
+      "content": "Người lái xe ô tô và những người ngồi trên xe có phải thắt dây đai an toàn tại những chỗ có trang bị dây đai không?",
+      "searchText": "nguoi lai xe o to va nhung nguoi ngoi tren xe co phai that day dai an toan tai nhung cho co trang bi day dai khong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Phải thắt dây đai an toàn."
+        },
+        {
+          "key": "2",
+          "text": "Chỉ người lái phải thắt."
+        },
+        {
+          "key": "3",
+          "text": "Không bắt buộc khi đi trong thành phố."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Người lái xe và người ngồi trên xe ô tô phải thắt dây đai an toàn tại những chỗ có trang bị dây đai.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000010",
+      "number": 16,
+      "content": "Người điều khiển phương tiện có được đi vào đường cao tốc bằng xe mô tô, xe gắn máy không?",
+      "searchText": "nguoi dieu khien phuong tien co duoc di vao duong cao toc bang xe mo to, xe gan may khong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Được đi nếu đi sát lề phải."
+        },
+        {
+          "key": "2",
+          "text": "Không được đi vào đường cao tốc."
+        },
+        {
+          "key": "3",
+          "text": "Được đi vào ban đêm."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Xe mô tô, xe gắn máy không được đi vào đường cao tốc, trừ phương tiện phục vụ quản lý, bảo trì đường cao tốc.",
+      "legalRef": null,
+      "categoryCode": "RULES",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000011",
+      "number": 17,
+      "content": "Văn hóa giao thông thể hiện qua hành vi nào sau đây?",
+      "searchText": "van hoa giao thong the hien qua hanh vi nao sau day?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Chấp hành quy định, nhường nhịn, giúp đỡ người khác khi tham gia giao thông."
+        },
+        {
+          "key": "2",
+          "text": "Bấm còi liên tục để nhắc người phía trước."
+        },
+        {
+          "key": "3",
+          "text": "Đi nhanh để tiết kiệm thời gian."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Văn hóa giao thông là chấp hành pháp luật, ứng xử lịch sự, nhường nhịn và giúp đỡ người khác.",
+      "legalRef": null,
+      "categoryCode": "CULTURE",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000012",
+      "number": 18,
+      "content": "Khi gặp người đi bộ đang qua đường tại nơi có vạch kẻ đường dành cho người đi bộ, người lái xe phải làm gì?",
+      "searchText": "khi gap nguoi di bo dang qua duong tai noi co vach ke duong danh cho nguoi di bo, nguoi lai xe phai lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Bấm còi để người đi bộ tránh."
+        },
+        {
+          "key": "2",
+          "text": "Giảm tốc độ, nhường đường cho người đi bộ."
+        },
+        {
+          "key": "3",
+          "text": "Đi vòng qua phía sau người đi bộ."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Tại nơi có vạch kẻ đường cho người đi bộ, người lái xe phải giảm tốc độ và nhường đường cho người đi bộ.",
+      "legalRef": null,
+      "categoryCode": "CULTURE",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000013",
+      "number": 19,
+      "content": "Khi phát hiện có người bị nạn trong vụ tai nạn giao thông, người tham gia giao thông nên làm gì?",
+      "searchText": "khi phat hien co nguoi bi nan trong vu tai nan giao thong, nguoi tham gia giao thong nen lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Bỏ đi vì không liên quan."
+        },
+        {
+          "key": "2",
+          "text": "Tụ tập xem, quay phim."
+        },
+        {
+          "key": "3",
+          "text": "Giúp đỡ người bị nạn, gọi cấp cứu và báo cơ quan chức năng."
+        }
+      ],
+      "correctKey": "3",
+      "explanation": "Người tham gia giao thông có trách nhiệm giúp đỡ, đưa người bị nạn đi cấp cứu và báo cho cơ quan chức năng.",
+      "legalRef": null,
+      "categoryCode": "CULTURE",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000014",
+      "number": 20,
+      "content": "Trong khu dân cư, vào giờ nghỉ ngơi ban đêm, người lái xe có nên sử dụng còi không?",
+      "searchText": "trong khu dan cu, vao gio nghi ngoi ban dem, nguoi lai xe co nen su dung coi khong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Không nên sử dụng còi, trừ xe ưu tiên làm nhiệm vụ."
+        },
+        {
+          "key": "2",
+          "text": "Được bấm còi bình thường."
+        },
+        {
+          "key": "3",
+          "text": "Bấm còi liên tục để báo hiệu."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Trong khu đông dân cư, vào thời gian nghỉ ngơi ban đêm không được dùng còi, trừ xe ưu tiên đang làm nhiệm vụ.",
+      "legalRef": null,
+      "categoryCode": "CULTURE",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000015",
+      "number": 21,
+      "content": "Người tham gia giao thông có được đua xe, cổ vũ đua xe trái phép không?",
+      "searchText": "nguoi tham gia giao thong co duoc dua xe, co vu dua xe trai phep khong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Được cổ vũ nhưng không được đua."
+        },
+        {
+          "key": "2",
+          "text": "Bị nghiêm cấm cả đua xe và cổ vũ, tổ chức đua xe trái phép."
+        },
+        {
+          "key": "3",
+          "text": "Được đua vào ban đêm khi đường vắng."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Tổ chức đua xe, đua xe, cổ vũ đua xe trái phép đều bị nghiêm cấm.",
+      "legalRef": null,
+      "categoryCode": "CULTURE",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": true,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000016",
+      "number": 22,
+      "content": "Khi điều khiển xe xuống dốc dài, người lái xe nên làm gì?",
+      "searchText": "khi dieu khien xe xuong doc dai, nguoi lai xe nen lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Tắt máy để tiết kiệm nhiên liệu."
+        },
+        {
+          "key": "2",
+          "text": "Giảm tốc độ, sử dụng phanh hợp lý và giữ khoảng cách an toàn."
+        },
+        {
+          "key": "3",
+          "text": "Tăng tốc để xuống dốc nhanh."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Xuống dốc phải giảm tốc độ, phanh hợp lý (kết hợp phanh động cơ), không tắt máy và không thả trôi.",
+      "legalRef": null,
+      "categoryCode": "DRIVING",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000017",
+      "number": 23,
+      "content": "Khi phanh xe mô tô trên đường trơn, người lái nên làm gì?",
+      "searchText": "khi phanh xe mo to tren duong tron, nguoi lai nen lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Bóp hết phanh trước thật mạnh."
+        },
+        {
+          "key": "2",
+          "text": "Phanh nhẹ, phối hợp đều phanh trước và phanh sau, tránh phanh gấp."
+        },
+        {
+          "key": "3",
+          "text": "Chỉ dùng phanh trước."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Trên đường trơn cần phanh nhẹ nhàng, phối hợp hai phanh để tránh trượt bánh.",
+      "legalRef": null,
+      "categoryCode": "DRIVING",
+      "licenseClasses": [
+        "A1",
+        "A"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000018",
+      "number": 24,
+      "content": "Khi trời mưa hoặc có sương mù làm hạn chế tầm nhìn, người lái xe phải làm gì?",
+      "searchText": "khi troi mua hoac co suong mu lam han che tam nhin, nguoi lai xe phai lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Giữ nguyên tốc độ."
+        },
+        {
+          "key": "2",
+          "text": "Giảm tốc độ, bật đèn chiếu sáng phù hợp và tăng khoảng cách với xe phía trước."
+        },
+        {
+          "key": "3",
+          "text": "Đi sát xe phía trước để dễ quan sát."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Khi tầm nhìn hạn chế phải giảm tốc độ, bật đèn và giữ khoảng cách an toàn lớn hơn.",
+      "legalRef": null,
+      "categoryCode": "DRIVING",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000019",
+      "number": 25,
+      "content": "Khi lùi xe ô tô, người lái xe phải làm gì?",
+      "searchText": "khi lui xe o to, nguoi lai xe phai lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Lùi nhanh để tránh cản trở."
+        },
+        {
+          "key": "2",
+          "text": "Quan sát phía sau, có tín hiệu cần thiết và chỉ lùi khi bảo đảm an toàn."
+        },
+        {
+          "key": "3",
+          "text": "Lùi ở bất kỳ đâu nếu cần."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Khi lùi xe phải quan sát, có tín hiệu và chỉ lùi khi an toàn; không lùi ở nơi cấm lùi.",
+      "legalRef": null,
+      "categoryCode": "DRIVING",
+      "licenseClasses": [
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000001a",
+      "number": 26,
+      "content": "Khi điều khiển xe vào đoạn đường cong, người lái xe nên làm gì?",
+      "searchText": "khi dieu khien xe vao doan duong cong, nguoi lai xe nen lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Giảm tốc độ trước khi vào đường cong, đi đúng phần đường của mình."
+        },
+        {
+          "key": "2",
+          "text": "Tăng tốc trong đường cong."
+        },
+        {
+          "key": "3",
+          "text": "Lấn sang làn ngược chiều để cua rộng."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Phải giảm tốc độ trước khi vào cua và đi đúng phần đường, không lấn làn.",
+      "legalRef": null,
+      "categoryCode": "DRIVING",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000001b",
+      "number": 27,
+      "content": "Người điều khiển phương tiện có được buông cả hai tay hoặc dùng chân điều khiển xe không?",
+      "searchText": "nguoi dieu khien phuong tien co duoc buong ca hai tay hoac dung chan dieu khien xe khong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Được khi đường thẳng, vắng."
+        },
+        {
+          "key": "2",
+          "text": "Bị nghiêm cấm."
+        },
+        {
+          "key": "3",
+          "text": "Được trong thời gian ngắn."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Buông cả hai tay, dùng chân điều khiển xe là hành vi bị nghiêm cấm vì mất khả năng kiểm soát phương tiện.",
+      "legalRef": null,
+      "categoryCode": "DRIVING",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": true,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000001c",
+      "number": 28,
+      "content": "Tác dụng của hệ thống phanh trên xe là gì?",
+      "searchText": "tac dung cua he thong phanh tren xe la gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Giảm tốc độ, dừng xe và giữ xe đứng yên."
+        },
+        {
+          "key": "2",
+          "text": "Tăng công suất động cơ."
+        },
+        {
+          "key": "3",
+          "text": "Chiếu sáng khi đi đêm."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Hệ thống phanh dùng để giảm tốc độ, dừng xe và giữ xe đứng yên khi đỗ.",
+      "legalRef": null,
+      "categoryCode": "MECHANICS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000001d",
+      "number": 29,
+      "content": "Vì sao cần kiểm tra áp suất lốp xe thường xuyên?",
+      "searchText": "vi sao can kiem tra ap suat lop xe thuong xuyen?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Để xe chạy êm, an toàn, tiết kiệm nhiên liệu và tăng tuổi thọ lốp."
+        },
+        {
+          "key": "2",
+          "text": "Để tăng tốc độ tối đa."
+        },
+        {
+          "key": "3",
+          "text": "Không cần thiết kiểm tra."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Áp suất lốp đúng giúp xe ổn định, phanh hiệu quả, tiết kiệm nhiên liệu và bền lốp.",
+      "legalRef": null,
+      "categoryCode": "MECHANICS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000001e",
+      "number": 30,
+      "content": "Khi đèn báo áp suất dầu bôi trơn trên bảng đồng hồ ô tô sáng lúc động cơ đang chạy, người lái xe nên làm gì?",
+      "searchText": "khi den bao ap suat dau boi tron tren bang dong ho o to sang luc dong co dang chay, nguoi lai xe nen lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Tiếp tục chạy bình thường."
+        },
+        {
+          "key": "2",
+          "text": "Dừng xe ở nơi an toàn, tắt động cơ và kiểm tra dầu bôi trơn."
+        },
+        {
+          "key": "3",
+          "text": "Tăng tốc để đèn tắt."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Đèn áp suất dầu sáng báo thiếu dầu hoặc áp suất thấp; tiếp tục chạy có thể làm hỏng động cơ.",
+      "legalRef": null,
+      "categoryCode": "MECHANICS",
+      "licenseClasses": [
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000001f",
+      "number": 31,
+      "content": "Gương chiếu hậu trên xe có tác dụng gì?",
+      "searchText": "guong chieu hau tren xe co tac dung gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Trang trí xe."
+        },
+        {
+          "key": "2",
+          "text": "Giúp người lái quan sát phía sau và hai bên để điều khiển xe an toàn."
+        },
+        {
+          "key": "3",
+          "text": "Không có tác dụng khi đi trong thành phố."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Gương chiếu hậu giúp quan sát phía sau, đặc biệt khi chuyển hướng, chuyển làn, vượt xe.",
+      "legalRef": null,
+      "categoryCode": "MECHANICS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000020",
+      "number": 32,
+      "content": "Biển nào sau đây là biển \"Cấm đi ngược chiều\"?",
+      "searchText": "bien nao sau day la bien \"cam di nguoc chieu\"?",
+      "imageUrl": "images/q_32.png",
+      "imageHash": "9f41bf23e5617b309f349bec52e78c859c5496be",
+      "options": [
+        {
+          "key": "1",
+          "text": "Biển trong hình."
+        },
+        {
+          "key": "2",
+          "text": "Biển hình tròn nền xanh có mũi tên trắng."
+        },
+        {
+          "key": "3",
+          "text": "Biển hình tam giác viền đỏ."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Biển P.102 \"Cấm đi ngược chiều\" có dạng hình tròn nền đỏ, vạch ngang màu trắng ở giữa.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000021",
+      "number": 33,
+      "content": "Biển trong hình có ý nghĩa gì?",
+      "searchText": "bien trong hinh co y nghia gi?",
+      "imageUrl": "images/q_33.png",
+      "imageHash": "a3b89e9d8e016ddd3172ab97e255cd814fbc3910",
+      "options": [
+        {
+          "key": "1",
+          "text": "Đường cấm tất cả các loại phương tiện đi lại cả hai hướng."
+        },
+        {
+          "key": "2",
+          "text": "Cấm đỗ xe."
+        },
+        {
+          "key": "3",
+          "text": "Đường ưu tiên."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Biển P.101 \"Đường cấm\": cấm tất cả các loại phương tiện đi lại cả hai hướng, trừ xe ưu tiên theo quy định.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000022",
+      "number": 34,
+      "content": "Biển trong hình có ý nghĩa gì?",
+      "searchText": "bien trong hinh co y nghia gi?",
+      "imageUrl": "images/q_34.png",
+      "imageHash": "dac1ccbcb496b5286fefa6611080965deaac784a",
+      "options": [
+        {
+          "key": "1",
+          "text": "Cấm dừng xe và đỗ xe."
+        },
+        {
+          "key": "2",
+          "text": "Cấm đỗ xe."
+        },
+        {
+          "key": "3",
+          "text": "Cấm đi thẳng."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Biển P.130 \"Cấm dừng xe và đỗ xe\": nền xanh, viền đỏ, có hai vạch đỏ chéo.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000023",
+      "number": 35,
+      "content": "Biển trong hình có ý nghĩa gì?",
+      "searchText": "bien trong hinh co y nghia gi?",
+      "imageUrl": "images/q_35.png",
+      "imageHash": "d4fee011f24061c4c09c95f62543cfc67bfde1e6",
+      "options": [
+        {
+          "key": "1",
+          "text": "Cấm dừng xe và đỗ xe."
+        },
+        {
+          "key": "2",
+          "text": "Cấm đỗ xe."
+        },
+        {
+          "key": "3",
+          "text": "Nơi đỗ xe."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Biển P.131a \"Cấm đỗ xe\": nền xanh, viền đỏ, có một vạch đỏ chéo.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000024",
+      "number": 36,
+      "content": "Biển trong hình thuộc nhóm biển nào?",
+      "searchText": "bien trong hinh thuoc nhom bien nao?",
+      "imageUrl": "images/q_36.png",
+      "imageHash": "9cc1d399da7824b2c3d738b2cc0dd85907b435fd",
+      "options": [
+        {
+          "key": "1",
+          "text": "Biển báo cấm."
+        },
+        {
+          "key": "2",
+          "text": "Biển báo nguy hiểm và cảnh báo."
+        },
+        {
+          "key": "3",
+          "text": "Biển hiệu lệnh."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Biển hình tam giác đều, viền đỏ, nền vàng là biển báo nguy hiểm và cảnh báo.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000025",
+      "number": 37,
+      "content": "Biển trong hình có ý nghĩa gì?",
+      "searchText": "bien trong hinh co y nghia gi?",
+      "imageUrl": "images/q_37.png",
+      "imageHash": "fb5faa2cb3a9dba91ca3f3cfc80ebb1b37ed48ac",
+      "options": [
+        {
+          "key": "1",
+          "text": "Các xe chỉ được đi theo hướng mũi tên chỉ (rẽ phải)."
+        },
+        {
+          "key": "2",
+          "text": "Cấm rẽ phải."
+        },
+        {
+          "key": "3",
+          "text": "Đường một chiều."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Biển hiệu lệnh hình tròn nền xanh, mũi tên trắng: các xe chỉ được đi theo hướng mũi tên.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000026",
+      "number": 38,
+      "content": "Biển trong hình báo hiệu điều gì?",
+      "searchText": "bien trong hinh bao hieu dieu gi?",
+      "imageUrl": "images/q_38.png",
+      "imageHash": "85856450cc273a0fd493b7023bd8e8b7b16b09dc",
+      "options": [
+        {
+          "key": "1",
+          "text": "Nơi giao nhau chạy theo vòng xuyến."
+        },
+        {
+          "key": "2",
+          "text": "Đường cấm."
+        },
+        {
+          "key": "3",
+          "text": "Quay đầu xe."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Biển R.303: nơi giao nhau chạy theo vòng xuyến, các xe phải đi vòng theo chiều mũi tên.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000027",
+      "number": 39,
+      "content": "Biển trong hình báo hiệu điều gì?",
+      "searchText": "bien trong hinh bao hieu dieu gi?",
+      "imageUrl": "images/q_39.png",
+      "imageHash": "6dd9143176a94b741c8c27940f88b1fce0e68edd",
+      "options": [
+        {
+          "key": "1",
+          "text": "Bắt đầu đường ưu tiên."
+        },
+        {
+          "key": "2",
+          "text": "Hết đường ưu tiên."
+        },
+        {
+          "key": "3",
+          "text": "Giao nhau với đường không ưu tiên."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Biển I.401 \"Bắt đầu đường ưu tiên\" có dạng hình vuông xoay, nền vàng viền trắng.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000028",
+      "number": 40,
+      "content": "Biển trong hình có ý nghĩa gì?",
+      "searchText": "bien trong hinh co y nghia gi?",
+      "imageUrl": "images/q_40.png",
+      "imageHash": "04b3043032797fcd55e5adc4f980c686419e7bcc",
+      "options": [
+        {
+          "key": "1",
+          "text": "Tốc độ tối đa cho phép (theo số ghi trên biển)."
+        },
+        {
+          "key": "2",
+          "text": "Tốc độ tối thiểu cho phép."
+        },
+        {
+          "key": "3",
+          "text": "Khoảng cách tối thiểu giữa hai xe."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Biển P.127 hình tròn viền đỏ, nền trắng, có số: tốc độ tối đa cho phép.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000029",
+      "number": 41,
+      "content": "Biển trong hình có ý nghĩa gì?",
+      "searchText": "bien trong hinh co y nghia gi?",
+      "imageUrl": "images/q_41.png",
+      "imageHash": "bc142cef85916ebf217820a6eaf8219dc649802c",
+      "options": [
+        {
+          "key": "1",
+          "text": "Cấm rẽ trái."
+        },
+        {
+          "key": "2",
+          "text": "Cấm quay đầu."
+        },
+        {
+          "key": "3",
+          "text": "Chỉ được rẽ trái."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Biển P.123a \"Cấm rẽ trái\": hình tròn viền đỏ, mũi tên rẽ trái bị gạch chéo.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000002a",
+      "number": 42,
+      "content": "Biển trong hình báo hiệu điều gì?",
+      "searchText": "bien trong hinh bao hieu dieu gi?",
+      "imageUrl": "images/q_42.png",
+      "imageHash": "351b00d559dd15d239858b2569c29487bd20ffea",
+      "options": [
+        {
+          "key": "1",
+          "text": "Phía trước có đường người đi bộ cắt ngang."
+        },
+        {
+          "key": "2",
+          "text": "Đường dành riêng cho người đi bộ."
+        },
+        {
+          "key": "3",
+          "text": "Cấm người đi bộ."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Biển cảnh báo hình tam giác có hình người đi bộ trên vạch: phía trước có đường người đi bộ cắt ngang.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000002b",
+      "number": 43,
+      "content": "Biển báo hiệu hình tròn, nền xanh lam, hình vẽ màu trắng thuộc nhóm biển nào?",
+      "searchText": "bien bao hieu hinh tron, nen xanh lam, hinh ve mau trang thuoc nhom bien nao?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Biển báo cấm."
+        },
+        {
+          "key": "2",
+          "text": "Biển hiệu lệnh."
+        },
+        {
+          "key": "3",
+          "text": "Biển chỉ dẫn."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Biển hiệu lệnh có dạng hình tròn, nền xanh lam, hình vẽ màu trắng.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000002c",
+      "number": 44,
+      "content": "Biển báo hiệu hình tròn, viền đỏ, nền trắng, hình vẽ màu đen thuộc nhóm biển nào?",
+      "searchText": "bien bao hieu hinh tron, vien do, nen trang, hinh ve mau den thuoc nhom bien nao?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Biển báo cấm."
+        },
+        {
+          "key": "2",
+          "text": "Biển hiệu lệnh."
+        },
+        {
+          "key": "3",
+          "text": "Biển chỉ dẫn."
+        }
+      ],
+      "correctKey": "1",
+      "explanation": "Biển báo cấm đa số có dạng hình tròn, viền đỏ, nền trắng, hình vẽ màu đen.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000002d",
+      "number": 45,
+      "content": "Vạch kẻ đường dạng vạch liền màu trắng phân chia hai làn xe cùng chiều có ý nghĩa gì?",
+      "searchText": "vach ke duong dang vach lien mau trang phan chia hai lan xe cung chieu co y nghia gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Được phép đè vạch để chuyển làn."
+        },
+        {
+          "key": "2",
+          "text": "Không được phép đè lên vạch, không được chuyển làn qua vạch."
+        },
+        {
+          "key": "3",
+          "text": "Chỉ là vạch trang trí."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Vạch liền dùng để phân chia làn và không cho phép xe đè lên hoặc chuyển làn qua vạch.",
+      "legalRef": null,
+      "categoryCode": "SIGNS",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000002e",
+      "number": 46,
+      "content": "Tại nơi giao nhau không có báo hiệu đi theo vòng xuyến và không có đèn tín hiệu, người lái xe phải nhường đường cho xe nào?",
+      "searchText": "tai noi giao nhau khong co bao hieu di theo vong xuyen va khong co den tin hieu, nguoi lai xe phai nhuong duong cho xe nao?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Xe đi đến từ bên trái."
+        },
+        {
+          "key": "2",
+          "text": "Xe đi đến từ bên phải."
+        },
+        {
+          "key": "3",
+          "text": "Không phải nhường xe nào."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Tại nơi giao nhau không có vòng xuyến, không có tín hiệu: phải nhường đường cho xe đi đến từ bên phải.",
+      "legalRef": null,
+      "categoryCode": "SITUATION",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "00000000000000000000002f",
+      "number": 47,
+      "content": "Tại nơi giao nhau có báo hiệu đi theo vòng xuyến, người lái xe phải nhường đường cho xe nào?",
+      "searchText": "tai noi giao nhau co bao hieu di theo vong xuyen, nguoi lai xe phai nhuong duong cho xe nao?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Xe đi đến từ bên phải."
+        },
+        {
+          "key": "2",
+          "text": "Xe đi đến từ bên trái (xe đang đi trong vòng xuyến)."
+        },
+        {
+          "key": "3",
+          "text": "Xe lớn hơn."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Tại nơi giao nhau có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ bên trái.",
+      "legalRef": null,
+      "categoryCode": "SITUATION",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000030",
+      "number": 48,
+      "content": "Xe đi trên đường không ưu tiên đến nơi giao nhau với đường ưu tiên phải làm gì?",
+      "searchText": "xe di tren duong khong uu tien den noi giao nhau voi duong uu tien phai lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Đi trước vì đến trước."
+        },
+        {
+          "key": "2",
+          "text": "Nhường đường cho xe đi trên đường ưu tiên."
+        },
+        {
+          "key": "3",
+          "text": "Bấm còi để xe trên đường ưu tiên nhường."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Xe đi từ đường không ưu tiên phải nhường đường cho xe đi trên đường ưu tiên, từ bất kỳ hướng nào tới.",
+      "legalRef": null,
+      "categoryCode": "SITUATION",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000031",
+      "number": 49,
+      "content": "Hai xe đi ngược chiều trên đoạn đường hẹp, một xe đang lên dốc và một xe đang xuống dốc. Xe nào phải nhường đường?",
+      "searchText": "hai xe di nguoc chieu tren doan duong hep, mot xe dang len doc va mot xe dang xuong doc. xe nao phai nhuong duong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Xe đang lên dốc."
+        },
+        {
+          "key": "2",
+          "text": "Xe đang xuống dốc phải nhường xe đang lên dốc."
+        },
+        {
+          "key": "3",
+          "text": "Xe nhỏ hơn."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Trên đường dốc hẹp, xe xuống dốc phải nhường đường cho xe đang lên dốc.",
+      "legalRef": null,
+      "categoryCode": "SITUATION",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000032",
+      "number": 50,
+      "content": "Khi đến nơi giao nhau, xe đi thẳng và xe rẽ trái đi ngược chiều nhau. Xe nào phải nhường đường?",
+      "searchText": "khi den noi giao nhau, xe di thang va xe re trai di nguoc chieu nhau. xe nao phai nhuong duong?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Xe đi thẳng phải nhường xe rẽ trái."
+        },
+        {
+          "key": "2",
+          "text": "Xe rẽ trái phải nhường xe đi thẳng."
+        },
+        {
+          "key": "3",
+          "text": "Xe nào đến trước thì đi trước."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Khi cùng tín hiệu cho phép, xe rẽ trái phải nhường đường cho xe đi thẳng ngược chiều.",
+      "legalRef": null,
+      "categoryCode": "SITUATION",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000033",
+      "number": 51,
+      "content": "Khi đèn xanh bật nhưng giao lộ phía trước đang ùn tắc, người lái xe nên làm gì?",
+      "searchText": "khi den xanh bat nhung giao lo phia truoc dang un tac, nguoi lai xe nen lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Đi vào giao lộ để giữ chỗ."
+        },
+        {
+          "key": "2",
+          "text": "Dừng lại trước vạch dừng, chỉ đi khi phía trước có đủ chỗ để thoát qua giao lộ."
+        },
+        {
+          "key": "3",
+          "text": "Bấm còi liên tục."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Không được đi vào nơi giao nhau khi phía trước đang ùn tắc, tránh gây kẹt cứng giao lộ.",
+      "legalRef": null,
+      "categoryCode": "SITUATION",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000034",
+      "number": 52,
+      "content": "Thứ tự các xe đi qua nơi giao nhau như sau: xe cứu thương đang phát tín hiệu ưu tiên, xe con và xe mô tô (cùng đi đến). Xe nào được đi trước?",
+      "searchText": "thu tu cac xe di qua noi giao nhau nhu sau: xe cuu thuong dang phat tin hieu uu tien, xe con va xe mo to (cung di den). xe nao duoc di truoc?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Xe con."
+        },
+        {
+          "key": "2",
+          "text": "Xe mô tô."
+        },
+        {
+          "key": "3",
+          "text": "Xe cứu thương."
+        }
+      ],
+      "correctKey": "3",
+      "explanation": "Xe cứu thương đang làm nhiệm vụ cấp cứu, có tín hiệu ưu tiên được đi trước.",
+      "legalRef": null,
+      "categoryCode": "SITUATION",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000035",
+      "number": 53,
+      "content": "Khi lái xe ô tô gặp đoàn người đi bộ đang qua đường ở nơi không có vạch kẻ đường, người lái xe phải làm gì?",
+      "searchText": "khi lai xe o to gap doan nguoi di bo dang qua duong o noi khong co vach ke duong, nguoi lai xe phai lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Bấm còi để đoàn người dạt sang."
+        },
+        {
+          "key": "2",
+          "text": "Giảm tốc độ, quan sát và nhường đường cho người đi bộ."
+        },
+        {
+          "key": "3",
+          "text": "Đi xen vào khoảng trống trong đoàn người."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Người lái xe phải giảm tốc độ, chú ý quan sát và nhường đường cho người đi bộ để bảo đảm an toàn.",
+      "legalRef": null,
+      "categoryCode": "SITUATION",
+      "licenseClasses": [
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000036",
+      "number": 54,
+      "content": "Đang đi, phía trước có xe buýt dừng đón trả khách tại điểm dừng. Người lái xe nên làm gì?",
+      "searchText": "dang di, phia truoc co xe buyt dung don tra khach tai diem dung. nguoi lai xe nen lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Tăng tốc vượt nhanh qua."
+        },
+        {
+          "key": "2",
+          "text": "Giảm tốc độ, quan sát hành khách có thể băng qua đường và chỉ vượt khi an toàn."
+        },
+        {
+          "key": "3",
+          "text": "Bấm còi liên tục khi đi qua."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Phải giảm tốc độ và chú ý hành khách lên xuống, băng qua đường; chỉ vượt khi bảo đảm an toàn.",
+      "legalRef": null,
+      "categoryCode": "SITUATION",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000037",
+      "number": 55,
+      "content": "Đến đoạn đường giao nhau với đường sắt khi chuông báo hiệu đang kêu và rào chắn đang hạ xuống, người lái xe phải làm gì?",
+      "searchText": "den doan duong giao nhau voi duong sat khi chuong bao hieu dang keu va rao chan dang ha xuong, nguoi lai xe phai lam gi?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Tăng tốc để vượt qua trước khi tàu tới."
+        },
+        {
+          "key": "2",
+          "text": "Dừng lại cách rào chắn một khoảng an toàn, không được vượt qua."
+        },
+        {
+          "key": "3",
+          "text": "Đi vòng qua rào chắn."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Khi có tín hiệu báo tàu sắp tới, rào chắn đang hạ, tuyệt đối không được vượt qua đường sắt.",
+      "legalRef": null,
+      "categoryCode": "SITUATION",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": true,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    },
+    {
+      "id": "000000000000000000000038",
+      "number": 56,
+      "content": "Ban đêm, khi gặp xe đi ngược chiều, người lái xe nên sử dụng đèn như thế nào?",
+      "searchText": "ban dem, khi gap xe di nguoc chieu, nguoi lai xe nen su dung den nhu the nao?",
+      "imageUrl": null,
+      "imageHash": null,
+      "options": [
+        {
+          "key": "1",
+          "text": "Bật đèn chiếu xa để quan sát tốt hơn."
+        },
+        {
+          "key": "2",
+          "text": "Chuyển từ đèn chiếu xa sang đèn chiếu gần."
+        },
+        {
+          "key": "3",
+          "text": "Tắt hết đèn."
+        }
+      ],
+      "correctKey": "2",
+      "explanation": "Khi tránh xe đi ngược chiều vào ban đêm phải chuyển sang đèn chiếu gần để không gây lóa mắt người lái xe kia.",
+      "legalRef": null,
+      "categoryCode": "SITUATION",
+      "licenseClasses": [
+        "A1",
+        "A",
+        "B"
+      ],
+      "isCritical": false,
+      "status": "active",
+      "version": 1,
+      "answerChangedAt": null
+    }
+  ],
+  "trafficSigns": [
+    {
+      "id": "010000000000000000000001",
+      "code": "P.101",
+      "name": "Đường cấm",
+      "group": "PROHIBITION",
+      "description": "Cấm tất cả các loại phương tiện đi lại cả hai hướng, trừ các xe được ưu tiên theo quy định.",
+      "imageUrl": "images/s_P.101.png",
+      "imageHash": "a3b89e9d8e016ddd3172ab97e255cd814fbc3910",
+      "searchText": "p.101 duong cam cam tat ca cac loai phuong tien di lai ca hai huong, tru cac xe duoc uu tien theo quy dinh.",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "010000000000000000000002",
+      "code": "P.102",
+      "name": "Cấm đi ngược chiều",
+      "group": "PROHIBITION",
+      "description": "Cấm các loại xe đi vào theo chiều đặt biển, trừ các xe được ưu tiên theo quy định.",
+      "imageUrl": "images/s_P.102.png",
+      "imageHash": "9f41bf23e5617b309f349bec52e78c859c5496be",
+      "searchText": "p.102 cam di nguoc chieu cam cac loai xe di vao theo chieu dat bien, tru cac xe duoc uu tien theo quy dinh.",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "010000000000000000000003",
+      "code": "P.123a",
+      "name": "Cấm rẽ trái",
+      "group": "PROHIBITION",
+      "description": "Cấm các loại xe rẽ trái tại nơi đặt biển.",
+      "imageUrl": "images/s_P.123a.png",
+      "imageHash": "bc142cef85916ebf217820a6eaf8219dc649802c",
+      "searchText": "p.123a cam re trai cam cac loai xe re trai tai noi dat bien.",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "010000000000000000000004",
+      "code": "P.127",
+      "name": "Tốc độ tối đa cho phép",
+      "group": "PROHIBITION",
+      "description": "Cấm các loại xe chạy với tốc độ vượt quá trị số ghi trên biển.",
+      "imageUrl": "images/s_P.127.png",
+      "imageHash": "04b3043032797fcd55e5adc4f980c686419e7bcc",
+      "searchText": "p.127 toc do toi da cho phep cam cac loai xe chay voi toc do vuot qua tri so ghi tren bien.",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "010000000000000000000005",
+      "code": "P.130",
+      "name": "Cấm dừng xe và đỗ xe",
+      "group": "PROHIBITION",
+      "description": "Cấm dừng và đỗ xe ở phía đường có đặt biển, trừ các xe được ưu tiên theo quy định.",
+      "imageUrl": "images/s_P.130.png",
+      "imageHash": "dac1ccbcb496b5286fefa6611080965deaac784a",
+      "searchText": "p.130 cam dung xe va do xe cam dung va do xe o phia duong co dat bien, tru cac xe duoc uu tien theo quy dinh.",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "010000000000000000000006",
+      "code": "P.131a",
+      "name": "Cấm đỗ xe",
+      "group": "PROHIBITION",
+      "description": "Cấm đỗ xe ở phía đường có đặt biển, trừ các xe được ưu tiên theo quy định.",
+      "imageUrl": "images/s_P.131a.png",
+      "imageHash": "d4fee011f24061c4c09c95f62543cfc67bfde1e6",
+      "searchText": "p.131a cam do xe cam do xe o phia duong co dat bien, tru cac xe duoc uu tien theo quy dinh.",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "010000000000000000000007",
+      "code": "W.201a",
+      "name": "Chỗ ngoặt nguy hiểm vòng bên trái",
+      "group": "DANGER",
+      "description": "Báo trước sắp đến chỗ ngoặt nguy hiểm vòng bên trái; người lái xe phải giảm tốc độ.",
+      "imageUrl": "images/s_W.201a.png",
+      "imageHash": "9cc1d399da7824b2c3d738b2cc0dd85907b435fd",
+      "searchText": "w.201a cho ngoat nguy hiem vong ben trai bao truoc sap den cho ngoat nguy hiem vong ben trai; nguoi lai xe phai giam toc do.",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "010000000000000000000008",
+      "code": "W.224",
+      "name": "Đường người đi bộ cắt ngang",
+      "group": "DANGER",
+      "description": "Báo trước sắp đến phần đường dành cho người đi bộ sang ngang; phải giảm tốc độ, nhường đường.",
+      "imageUrl": "images/s_W.224.png",
+      "imageHash": "351b00d559dd15d239858b2569c29487bd20ffea",
+      "searchText": "w.224 duong nguoi di bo cat ngang bao truoc sap den phan duong danh cho nguoi di bo sang ngang; phai giam toc do, nhuong duong.",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "010000000000000000000009",
+      "code": "R.302a",
+      "name": "Hướng phải đi vòng chướng ngại vật (sang phải)",
+      "group": "MANDATORY",
+      "description": "Các xe chỉ được đi theo hướng mũi tên chỉ.",
+      "imageUrl": "images/s_R.302a.png",
+      "imageHash": "fb5faa2cb3a9dba91ca3f3cfc80ebb1b37ed48ac",
+      "searchText": "r.302a huong phai di vong chuong ngai vat (sang phai) cac xe chi duoc di theo huong mui ten chi.",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "01000000000000000000000a",
+      "code": "R.303",
+      "name": "Nơi giao nhau chạy theo vòng xuyến",
+      "group": "MANDATORY",
+      "description": "Các loại xe phải chạy vòng theo chiều mũi tên tại nơi giao nhau.",
+      "imageUrl": "images/s_R.303.png",
+      "imageHash": "85856450cc273a0fd493b7023bd8e8b7b16b09dc",
+      "searchText": "r.303 noi giao nhau chay theo vong xuyen cac loai xe phai chay vong theo chieu mui ten tai noi giao nhau.",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "01000000000000000000000b",
+      "code": "I.401",
+      "name": "Bắt đầu đường ưu tiên",
+      "group": "INDICATION",
+      "description": "Báo hiệu bắt đầu đoạn đường ưu tiên; các xe đi trên đường này được quyền ưu tiên qua nơi giao nhau.",
+      "imageUrl": "images/s_I.401.png",
+      "imageHash": "6dd9143176a94b741c8c27940f88b1fce0e68edd",
+      "searchText": "i.401 bat dau duong uu tien bao hieu bat dau doan duong uu tien; cac xe di tren duong nay duoc quyen uu tien qua noi giao nhau.",
+      "status": "active",
+      "version": 1
+    }
+  ],
+  "penalties": [
+    {
+      "id": "020000000000000000000001",
+      "violation": "Không chấp hành hiệu lệnh của đèn tín hiệu giao thông (vượt đèn đỏ)",
+      "vehicleType": "MOTORBIKE",
+      "fineMin": 4000000,
+      "fineMax": 6000000,
+      "additionalPenalty": "Trừ điểm giấy phép lái xe theo quy định",
+      "legalRef": "Nghị định 168/2024/NĐ-CP",
+      "searchText": "khong chap hanh hieu lenh cua den tin hieu giao thong (vuot den do)",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "020000000000000000000002",
+      "violation": "Không chấp hành hiệu lệnh của đèn tín hiệu giao thông (vượt đèn đỏ)",
+      "vehicleType": "CAR",
+      "fineMin": 18000000,
+      "fineMax": 20000000,
+      "additionalPenalty": "Trừ điểm giấy phép lái xe theo quy định",
+      "legalRef": "Nghị định 168/2024/NĐ-CP",
+      "searchText": "khong chap hanh hieu lenh cua den tin hieu giao thong (vuot den do)",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "020000000000000000000003",
+      "violation": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 mg/100 ml máu hoặc chưa vượt quá 0,25 mg/1 lít khí thở",
+      "vehicleType": "MOTORBIKE",
+      "fineMin": 2000000,
+      "fineMax": 3000000,
+      "additionalPenalty": "Trừ điểm giấy phép lái xe theo quy định",
+      "legalRef": "Nghị định 168/2024/NĐ-CP",
+      "searchText": "dieu khien xe tren duong ma trong mau hoac hoi tho co nong do con nhung chua vuot qua 50 mg/100 ml mau hoac chua vuot qua 0,25 mg/1 lit khi tho",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "020000000000000000000004",
+      "violation": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 mg/100 ml máu hoặc chưa vượt quá 0,25 mg/1 lít khí thở",
+      "vehicleType": "CAR",
+      "fineMin": 6000000,
+      "fineMax": 8000000,
+      "additionalPenalty": "Trừ điểm giấy phép lái xe theo quy định",
+      "legalRef": "Nghị định 168/2024/NĐ-CP",
+      "searchText": "dieu khien xe tren duong ma trong mau hoac hoi tho co nong do con nhung chua vuot qua 50 mg/100 ml mau hoac chua vuot qua 0,25 mg/1 lit khi tho",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "020000000000000000000005",
+      "violation": "Không đội mũ bảo hiểm hoặc đội mũ bảo hiểm không cài quai đúng quy cách khi điều khiển xe",
+      "vehicleType": "MOTORBIKE",
+      "fineMin": 400000,
+      "fineMax": 600000,
+      "additionalPenalty": null,
+      "legalRef": "Nghị định 168/2024/NĐ-CP",
+      "searchText": "khong doi mu bao hiem hoac doi mu bao hiem khong cai quai dung quy cach khi dieu khien xe",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "020000000000000000000006",
+      "violation": "Người đang điều khiển xe sử dụng điện thoại di động (cầm tay)",
+      "vehicleType": "MOTORBIKE",
+      "fineMin": 800000,
+      "fineMax": 1000000,
+      "additionalPenalty": "Trừ điểm giấy phép lái xe theo quy định",
+      "legalRef": "Nghị định 168/2024/NĐ-CP",
+      "searchText": "nguoi dang dieu khien xe su dung dien thoai di dong (cam tay)",
+      "status": "active",
+      "version": 1
+    },
+    {
+      "id": "020000000000000000000007",
+      "violation": "Người đang điều khiển xe sử dụng điện thoại di động (cầm tay)",
+      "vehicleType": "CAR",
+      "fineMin": 4000000,
+      "fineMax": 6000000,
+      "additionalPenalty": "Trừ điểm giấy phép lái xe theo quy định",
+      "legalRef": "Nghị định 168/2024/NĐ-CP",
+      "searchText": "nguoi dang dieu khien xe su dung dien thoai di dong (cam tay)",
+      "status": "active",
+      "version": 1
+    }
+  ]
+}
