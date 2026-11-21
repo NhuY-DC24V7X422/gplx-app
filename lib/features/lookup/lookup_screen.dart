@@ -11,7 +11,7 @@ class LookupScreen extends StatelessWidget {
     return const PlaceholderScreen(
       title: 'Tra cứu',
       icon: Icons.traffic,
-      note: 'Tra cứu biển báo, mức phạt (ngày 13)',
+      note: 'Tra cứu biển báo, mức phạt',
     );
   }
 }

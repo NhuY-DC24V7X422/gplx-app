@@ -14,7 +14,7 @@ class Env {
     return 'http://localhost:3000/api/v1';
   }
 
-  // phiên bản app, gửi lên API để kiểm tra có bắt cập nhật không (ngày 17)
+  // phiên bản app, gửi lên API để kiểm tra có bắt cập nhật không
   static const appVersion = String.fromEnvironment(
     'APP_VERSION',
     defaultValue: '1.0.0',

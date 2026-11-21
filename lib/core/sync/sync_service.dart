@@ -5,8 +5,8 @@ import 'package:flutter/services.dart';
 
 import '../../data/repositories/catalog_repository.dart';
 
-// Đồng bộ dữ liệu. Hôm nay mới có phần nạp gói đóng kèm.
-// Ngày 15 thêm: hỏi API có bản mới không, tải về, tải ảnh, đẩy/kéo tiến độ.
+// Đồng bộ dữ liệu câu hỏi giữa máy chủ và điện thoại.
+// Hiện có: nạp gói câu hỏi đóng kèm ở lần mở app đầu tiên.
 class SyncService {
   SyncService({required this.catalog, AssetBundle? assets})
     : _assets = assets ?? rootBundle;

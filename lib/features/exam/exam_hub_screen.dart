@@ -11,7 +11,7 @@ class ExamHubScreen extends StatelessWidget {
     return const PlaceholderScreen(
       title: 'Thi thử',
       icon: Icons.timer,
-      note: 'Thi thử theo đề, xem lịch sử (ngày 12)',
+      note: 'Thi thử theo đề, xem lịch sử',
     );
   }
 }

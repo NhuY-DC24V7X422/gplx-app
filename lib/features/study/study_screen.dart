@@ -11,7 +11,7 @@ class StudyScreen extends StatelessWidget {
     return const PlaceholderScreen(
       title: 'Học',
       icon: Icons.menu_book,
-      note: 'Học theo chủ đề, câu điểm liệt, sổ câu sai (ngày 11)',
+      note: 'Học theo chủ đề, câu điểm liệt, sổ câu sai',
     );
   }
 }

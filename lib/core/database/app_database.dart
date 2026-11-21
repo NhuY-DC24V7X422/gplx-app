@@ -93,7 +93,6 @@ class Penalties extends Table {
 
 // =====================================================================
 // PHẦN 2: Tiến độ học của người dùng (userId = null là dữ liệu của khách)
-// Hôm nay mới tạo bảng, ngày 10–12 mới dùng.
 // =====================================================================
 
 // Mỗi lần trả lời 1 câu = 1 dòng. CHỈ THÊM, không sửa/xóa.

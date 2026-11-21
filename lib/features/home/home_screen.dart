@@ -4,8 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../app/providers.dart';
 import '../../core/utils/vn_date.dart';
 
-// Tab Trang chủ (bản tạm). Ngày 13 làm thật: lộ trình hôm nay, chuỗi ngày học, khả năng đạt.
-// Hôm nay chỉ hiện các lựa chọn ở màn hình thiết lập ban đầu để kiểm tra đã lưu đúng.
+// Tab Trang chủ (bản tạm): hiện các lựa chọn ở màn hình thiết lập ban đầu.
+// Chưa làm: lộ trình hôm nay, chuỗi ngày học, khả năng đạt.
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
@@ -46,7 +46,7 @@ class HomeScreen extends ConsumerWidget {
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'Lộ trình hôm nay, chuỗi ngày học (ngày 13)',
+                  'Lộ trình hôm nay và chuỗi ngày học: đang xây dựng',
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurfaceVariant,
                   ),

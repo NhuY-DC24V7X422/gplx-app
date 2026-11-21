@@ -11,7 +11,7 @@ class AccountScreen extends StatelessWidget {
     return const PlaceholderScreen(
       title: 'Cá nhân',
       icon: Icons.person,
-      note: 'Đăng nhập, cài đặt, đồng bộ (ngày 14, 16)',
+      note: 'Cài đặt và thông tin ứng dụng',
     );
   }
 }

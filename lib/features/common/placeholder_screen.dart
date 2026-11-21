@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// Màn hình tạm cho các tab chưa làm. Các ngày sau sẽ thay bằng màn hình thật.
+// Màn hình tạm cho các tab chưa làm xong, sẽ được thay bằng màn hình thật.
 class PlaceholderScreen extends StatelessWidget {
   const PlaceholderScreen({
     super.key,
@@ -11,7 +11,7 @@ class PlaceholderScreen extends StatelessWidget {
 
   final String title;
   final IconData icon;
-  final String note; // ghi chú ngày nào sẽ làm
+  final String note; // mô tả ngắn chức năng của tab
 
   @override
   Widget build(BuildContext context) {
