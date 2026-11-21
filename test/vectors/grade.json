@@ -1,0 +1,697 @@
+[
+  {
+    "name": "21 đúng, câu điểm liệt đúng → đạt",
+    "input": {
+      "passScore": 21,
+      "items": [
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": true
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": null,
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "3",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": null,
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "3",
+          "isCritical": false
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 21,
+      "total": 25,
+      "passed": true,
+      "failedByCritical": false
+    }
+  },
+  {
+    "name": "24 đúng, sai câu điểm liệt → trượt điểm liệt",
+    "input": {
+      "passScore": 21,
+      "items": [
+        {
+          "correctKey": "1",
+          "selectedKey": "2",
+          "isCritical": true
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 24,
+      "total": 25,
+      "passed": false,
+      "failedByCritical": true
+    }
+  },
+  {
+    "name": "24 đúng, bỏ trống câu điểm liệt → trượt điểm liệt",
+    "input": {
+      "passScore": 21,
+      "items": [
+        {
+          "correctKey": "1",
+          "selectedKey": null,
+          "isCritical": true
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 24,
+      "total": 25,
+      "passed": false,
+      "failedByCritical": true
+    }
+  },
+  {
+    "name": "20 đúng → không đạt",
+    "input": {
+      "passScore": 21,
+      "items": [
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": true
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "3",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": null,
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "3",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": null,
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "3",
+          "isCritical": false
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 20,
+      "total": 25,
+      "passed": false,
+      "failedByCritical": false
+    }
+  },
+  {
+    "name": "25 đúng → đạt",
+    "input": {
+      "passScore": 21,
+      "items": [
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": true
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        },
+        {
+          "correctKey": "1",
+          "selectedKey": "1",
+          "isCritical": false
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 25,
+      "total": 25,
+      "passed": true,
+      "failedByCritical": false
+    }
+  }
+]

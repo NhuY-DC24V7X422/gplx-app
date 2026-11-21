@@ -1,0 +1,349 @@
+[
+  {
+    "name": "không có sự kiện",
+    "input": {
+      "answerChangedAt": null,
+      "events": []
+    },
+    "expected": {
+      "correctCount": 0,
+      "wrongCount": 0,
+      "consecutiveCorrect": 0,
+      "inWrongBook": false,
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "dueDate": null
+    }
+  },
+  {
+    "name": "3 lần đúng cùng ngày chỉ cập nhật SM-2 một lần",
+    "input": {
+      "answerChangedAt": null,
+      "events": [
+        {
+          "clientEventId": "a",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T08:00:00+07:00"
+        },
+        {
+          "clientEventId": "b",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T09:00:00+07:00"
+        },
+        {
+          "clientEventId": "c",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T10:00:00+07:00"
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 3,
+      "wrongCount": 0,
+      "consecutiveCorrect": 3,
+      "inWrongBook": false,
+      "ef": 2.5,
+      "interval": 1,
+      "reps": 1,
+      "dueDate": "2026-10-21"
+    }
+  },
+  {
+    "name": "đúng hai ngày liên tiếp",
+    "input": {
+      "answerChangedAt": null,
+      "events": [
+        {
+          "clientEventId": "a",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T08:00:00+07:00"
+        },
+        {
+          "clientEventId": "b",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-21T08:00:00+07:00"
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 2,
+      "wrongCount": 0,
+      "consecutiveCorrect": 2,
+      "inWrongBook": false,
+      "ef": 2.5,
+      "interval": 6,
+      "reps": 2,
+      "dueDate": "2026-10-27"
+    }
+  },
+  {
+    "name": "sai rồi đúng 3 lần liên tiếp thì ra khỏi sổ câu sai",
+    "input": {
+      "answerChangedAt": null,
+      "events": [
+        {
+          "clientEventId": "e1",
+          "isCorrect": false,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T08:00:00+07:00"
+        },
+        {
+          "clientEventId": "e2",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T09:00:00+07:00"
+        },
+        {
+          "clientEventId": "e3",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-21T08:00:00+07:00"
+        },
+        {
+          "clientEventId": "e4",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-22T08:00:00+07:00"
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 3,
+      "wrongCount": 1,
+      "consecutiveCorrect": 3,
+      "inWrongBook": false,
+      "ef": 1.96,
+      "interval": 6,
+      "reps": 2,
+      "dueDate": "2026-10-28"
+    }
+  },
+  {
+    "name": "sai rồi đúng 2 lần vẫn trong sổ câu sai",
+    "input": {
+      "answerChangedAt": null,
+      "events": [
+        {
+          "clientEventId": "a",
+          "isCorrect": false,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T08:00:00+07:00"
+        },
+        {
+          "clientEventId": "b",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-21T08:00:00+07:00"
+        },
+        {
+          "clientEventId": "c",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-22T08:00:00+07:00"
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 2,
+      "wrongCount": 1,
+      "consecutiveCorrect": 2,
+      "inWrongBook": true,
+      "ef": 1.96,
+      "interval": 6,
+      "reps": 2,
+      "dueDate": "2026-10-28"
+    }
+  },
+  {
+    "name": "bỏ qua sự kiện trước answerChangedAt",
+    "input": {
+      "answerChangedAt": "2026-10-21T00:00:00+07:00",
+      "events": [
+        {
+          "clientEventId": "a",
+          "isCorrect": false,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T08:00:00+07:00"
+        },
+        {
+          "clientEventId": "b",
+          "isCorrect": false,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T09:00:00+07:00"
+        },
+        {
+          "clientEventId": "c",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-21T08:00:00+07:00"
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 1,
+      "wrongCount": 0,
+      "consecutiveCorrect": 1,
+      "inWrongBook": false,
+      "ef": 2.5,
+      "interval": 1,
+      "reps": 1,
+      "dueDate": "2026-10-22"
+    }
+  },
+  {
+    "name": "hội tụ: thứ tự đầu vào khác nhau cho cùng kết quả",
+    "input": {
+      "answerChangedAt": null,
+      "events": [
+        {
+          "clientEventId": "e4",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-22T08:00:00+07:00"
+        },
+        {
+          "clientEventId": "e1",
+          "isCorrect": false,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T08:00:00+07:00"
+        },
+        {
+          "clientEventId": "e3",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-21T08:00:00+07:00"
+        },
+        {
+          "clientEventId": "e2",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T09:00:00+07:00"
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 3,
+      "wrongCount": 1,
+      "consecutiveCorrect": 3,
+      "inWrongBook": false,
+      "ef": 1.96,
+      "interval": 6,
+      "reps": 2,
+      "dueDate": "2026-10-28"
+    }
+  },
+  {
+    "name": "qua nửa đêm giờ Việt Nam là hai ngày khác nhau",
+    "input": {
+      "answerChangedAt": null,
+      "events": [
+        {
+          "clientEventId": "a",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T23:59:00+07:00"
+        },
+        {
+          "clientEventId": "b",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-21T00:01:00+07:00"
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 2,
+      "wrongCount": 0,
+      "consecutiveCorrect": 2,
+      "inWrongBook": false,
+      "ef": 2.5,
+      "interval": 6,
+      "reps": 2,
+      "dueDate": "2026-10-27"
+    }
+  },
+  {
+    "name": "thời gian dạng UTC được quy về ngày Việt Nam",
+    "input": {
+      "answerChangedAt": null,
+      "events": [
+        {
+          "clientEventId": "a",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T17:30:00Z"
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 1,
+      "wrongCount": 0,
+      "consecutiveCorrect": 1,
+      "inWrongBook": false,
+      "ef": 2.5,
+      "interval": 1,
+      "reps": 1,
+      "dueDate": "2026-10-22"
+    }
+  },
+  {
+    "name": "trả lời đúng nhanh dưới 10 giây được q = 5",
+    "input": {
+      "answerChangedAt": null,
+      "events": [
+        {
+          "clientEventId": "a",
+          "isCorrect": true,
+          "responseMs": 3000,
+          "answeredAt": "2026-10-20T08:00:00+07:00"
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 1,
+      "wrongCount": 0,
+      "consecutiveCorrect": 1,
+      "inWrongBook": false,
+      "ef": 2.6,
+      "interval": 1,
+      "reps": 1,
+      "dueDate": "2026-10-21"
+    }
+  },
+  {
+    "name": "cùng thời điểm thì sắp theo clientEventId",
+    "input": {
+      "answerChangedAt": null,
+      "events": [
+        {
+          "clientEventId": "z",
+          "isCorrect": true,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T08:00:00+07:00"
+        },
+        {
+          "clientEventId": "a",
+          "isCorrect": false,
+          "responseMs": 15000,
+          "answeredAt": "2026-10-20T08:00:00+07:00"
+        }
+      ]
+    },
+    "expected": {
+      "correctCount": 1,
+      "wrongCount": 1,
+      "consecutiveCorrect": 1,
+      "inWrongBook": true,
+      "ef": 1.96,
+      "interval": 1,
+      "reps": 0,
+      "dueDate": "2026-10-21"
+    }
+  }
+]

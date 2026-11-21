@@ -1,0 +1,32 @@
+[
+  {
+    "name": "bỏ dấu",
+    "input": "Cấm đi ngược chiều",
+    "expected": "cam di nguoc chieu"
+  },
+  {
+    "name": "chữ hoa và Đ",
+    "input": "ĐƯỜNG  ưu tiên",
+    "expected": "duong uu tien"
+  },
+  {
+    "name": "khoảng trắng đầu cuối",
+    "input": "  Xe gắn máy ",
+    "expected": "xe gan may"
+  },
+  {
+    "name": "giữ dấu câu",
+    "input": "Ưu tiên, nhường đường!",
+    "expected": "uu tien, nhuong duong!"
+  },
+  {
+    "name": "mã biển",
+    "input": "P.102",
+    "expected": "p.102"
+  },
+  {
+    "name": "xuống dòng",
+    "input": "Câu hỏi\nnhiều dòng",
+    "expected": "cau hoi nhieu dong"
+  }
+]

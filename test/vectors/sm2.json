@@ -1,0 +1,114 @@
+[
+  {
+    "name": "câu mới đúng",
+    "input": {
+      "state": {
+        "ef": 2.5,
+        "interval": 0,
+        "reps": 0
+      },
+      "q": 4
+    },
+    "expected": {
+      "ef": 2.5,
+      "interval": 1,
+      "reps": 1
+    }
+  },
+  {
+    "name": "đúng lần 2",
+    "input": {
+      "state": {
+        "ef": 2.5,
+        "interval": 1,
+        "reps": 1
+      },
+      "q": 4
+    },
+    "expected": {
+      "ef": 2.5,
+      "interval": 6,
+      "reps": 2
+    }
+  },
+  {
+    "name": "đúng lần 3",
+    "input": {
+      "state": {
+        "ef": 2.5,
+        "interval": 6,
+        "reps": 2
+      },
+      "q": 4
+    },
+    "expected": {
+      "ef": 2.5,
+      "interval": 15,
+      "reps": 3
+    }
+  },
+  {
+    "name": "sai",
+    "input": {
+      "state": {
+        "ef": 2.5,
+        "interval": 15,
+        "reps": 3
+      },
+      "q": 1
+    },
+    "expected": {
+      "ef": 1.96,
+      "interval": 1,
+      "reps": 0
+    }
+  },
+  {
+    "name": "đúng nhanh",
+    "input": {
+      "state": {
+        "ef": 2.5,
+        "interval": 0,
+        "reps": 0
+      },
+      "q": 5
+    },
+    "expected": {
+      "ef": 2.6,
+      "interval": 1,
+      "reps": 1
+    }
+  },
+  {
+    "name": "ef chạm đáy",
+    "input": {
+      "state": {
+        "ef": 1.3,
+        "interval": 1,
+        "reps": 0
+      },
+      "q": 1
+    },
+    "expected": {
+      "ef": 1.3,
+      "interval": 1,
+      "reps": 0
+    }
+  },
+  {
+    "name": "interval làm tròn",
+    "input": {
+      "state": {
+        "ef": 1.96,
+        "interval": 6,
+        "reps": 2
+      },
+      "q": 4
+    },
+    "expected": {
+      "ef": 1.96,
+      "interval": 12,
+      "reps": 3
+    }
+  }
+]

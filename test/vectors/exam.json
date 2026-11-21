@@ -1,0 +1,250 @@
+[
+  {
+    "name": "đề A1 đủ câu",
+    "input": {
+      "licenseClass": "A1",
+      "config": {
+        "totalQuestions": 25,
+        "passScore": 21,
+        "durationMinutes": 19,
+        "slots": [
+          {
+            "label": "Quy định chung, quy tắc",
+            "categoryCodes": [
+              "RULES"
+            ],
+            "critical": false,
+            "count": 8
+          },
+          {
+            "label": "Tình huống mất an toàn nghiêm trọng",
+            "categoryCodes": [],
+            "critical": true,
+            "count": 1
+          },
+          {
+            "label": "Văn hóa, đạo đức",
+            "categoryCodes": [
+              "CULTURE"
+            ],
+            "critical": false,
+            "count": 1
+          },
+          {
+            "label": "Kỹ thuật lái hoặc cấu tạo sửa chữa",
+            "categoryCodes": [
+              "DRIVING",
+              "MECHANICS"
+            ],
+            "critical": false,
+            "count": 1
+          },
+          {
+            "label": "Báo hiệu đường bộ",
+            "categoryCodes": [
+              "SIGNS"
+            ],
+            "critical": false,
+            "count": 8
+          },
+          {
+            "label": "Sa hình, xử lý tình huống",
+            "categoryCodes": [
+              "SITUATION"
+            ],
+            "critical": false,
+            "count": 6
+          }
+        ]
+      },
+      "pool": [
+        {
+          "categoryCode": "RULES",
+          "critical": false,
+          "count": 20
+        },
+        {
+          "categoryCode": "RULES",
+          "critical": true,
+          "count": 4
+        },
+        {
+          "categoryCode": "CULTURE",
+          "critical": false,
+          "count": 5
+        },
+        {
+          "categoryCode": "DRIVING",
+          "critical": false,
+          "count": 3
+        },
+        {
+          "categoryCode": "MECHANICS",
+          "critical": false,
+          "count": 3
+        },
+        {
+          "categoryCode": "SIGNS",
+          "critical": false,
+          "count": 20
+        },
+        {
+          "categoryCode": "SITUATION",
+          "critical": false,
+          "count": 12
+        },
+        {
+          "categoryCode": "SITUATION",
+          "critical": true,
+          "count": 2
+        },
+        {
+          "categoryCode": "SIGNS",
+          "critical": false,
+          "count": 5,
+          "licenseClasses": [
+            "B"
+          ]
+        }
+      ],
+      "seed": 42
+    },
+    "expected": {
+      "total": 25,
+      "slotCounts": [
+        8,
+        1,
+        1,
+        1,
+        8,
+        6
+      ],
+      "criticalCount": 1,
+      "warnings": 0
+    }
+  },
+  {
+    "name": "slot biển báo thiếu câu thì lấy bù và cảnh báo",
+    "input": {
+      "licenseClass": "A1",
+      "config": {
+        "totalQuestions": 25,
+        "passScore": 21,
+        "durationMinutes": 19,
+        "slots": [
+          {
+            "label": "Quy định chung, quy tắc",
+            "categoryCodes": [
+              "RULES"
+            ],
+            "critical": false,
+            "count": 8
+          },
+          {
+            "label": "Tình huống mất an toàn nghiêm trọng",
+            "categoryCodes": [],
+            "critical": true,
+            "count": 1
+          },
+          {
+            "label": "Văn hóa, đạo đức",
+            "categoryCodes": [
+              "CULTURE"
+            ],
+            "critical": false,
+            "count": 1
+          },
+          {
+            "label": "Kỹ thuật lái hoặc cấu tạo sửa chữa",
+            "categoryCodes": [
+              "DRIVING",
+              "MECHANICS"
+            ],
+            "critical": false,
+            "count": 1
+          },
+          {
+            "label": "Báo hiệu đường bộ",
+            "categoryCodes": [
+              "SIGNS"
+            ],
+            "critical": false,
+            "count": 8
+          },
+          {
+            "label": "Sa hình, xử lý tình huống",
+            "categoryCodes": [
+              "SITUATION"
+            ],
+            "critical": false,
+            "count": 6
+          }
+        ]
+      },
+      "seed": 7,
+      "pool": [
+        {
+          "categoryCode": "RULES",
+          "critical": false,
+          "count": 20
+        },
+        {
+          "categoryCode": "RULES",
+          "critical": true,
+          "count": 4
+        },
+        {
+          "categoryCode": "CULTURE",
+          "critical": false,
+          "count": 5
+        },
+        {
+          "categoryCode": "DRIVING",
+          "critical": false,
+          "count": 3
+        },
+        {
+          "categoryCode": "MECHANICS",
+          "critical": false,
+          "count": 3
+        },
+        {
+          "categoryCode": "SIGNS",
+          "critical": false,
+          "count": 5
+        },
+        {
+          "categoryCode": "SITUATION",
+          "critical": false,
+          "count": 12
+        },
+        {
+          "categoryCode": "SITUATION",
+          "critical": true,
+          "count": 2
+        },
+        {
+          "categoryCode": "SIGNS",
+          "critical": false,
+          "count": 5,
+          "licenseClasses": [
+            "B"
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "total": 25,
+      "slotCounts": [
+        8,
+        1,
+        1,
+        1,
+        5,
+        6
+      ],
+      "criticalCount": 1,
+      "warnings": 1
+    }
+  }
+]

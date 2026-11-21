@@ -1,0 +1,253 @@
+[
+  {
+    "name": "dưới 3 lần thi",
+    "input": {
+      "attempts": [
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 22,
+          "passScore": 21,
+          "failedByCritical": false
+        }
+      ],
+      "coverage": 0.5
+    },
+    "expected": {
+      "level": "NOT_ENOUGH_DATA",
+      "reasons": [
+        "NEED_MORE_EXAMS",
+        "LOW_COVERAGE"
+      ]
+    }
+  },
+  {
+    "name": "sẵn sàng",
+    "input": {
+      "attempts": [
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        }
+      ],
+      "coverage": 0.95
+    },
+    "expected": {
+      "level": "READY",
+      "reasons": []
+    }
+  },
+  {
+    "name": "điểm cao nhưng chưa học đủ",
+    "input": {
+      "attempts": [
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        }
+      ],
+      "coverage": 0.8
+    },
+    "expected": {
+      "level": "NEAR_READY",
+      "reasons": [
+        "LOW_COVERAGE"
+      ]
+    }
+  },
+  {
+    "name": "gần sẵn sàng có 1 lần trượt điểm liệt",
+    "input": {
+      "attempts": [
+        {
+          "correctCount": 21,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 21,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 20,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 20,
+          "passScore": 21,
+          "failedByCritical": true
+        },
+        {
+          "correctCount": 19,
+          "passScore": 21,
+          "failedByCritical": false
+        }
+      ],
+      "coverage": 0.95
+    },
+    "expected": {
+      "level": "NEAR_READY",
+      "reasons": [
+        "LOW_SCORE",
+        "CRITICAL_FAILS"
+      ]
+    }
+  },
+  {
+    "name": "điểm thấp",
+    "input": {
+      "attempts": [
+        {
+          "correctCount": 19,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 19,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 19,
+          "passScore": 21,
+          "failedByCritical": false
+        }
+      ],
+      "coverage": 1
+    },
+    "expected": {
+      "level": "NOT_READY",
+      "reasons": [
+        "LOW_SCORE"
+      ]
+    }
+  },
+  {
+    "name": "2 lần trượt điểm liệt",
+    "input": {
+      "attempts": [
+        {
+          "correctCount": 24,
+          "passScore": 21,
+          "failedByCritical": true
+        },
+        {
+          "correctCount": 24,
+          "passScore": 21,
+          "failedByCritical": true
+        },
+        {
+          "correctCount": 24,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 24,
+          "passScore": 21,
+          "failedByCritical": false
+        }
+      ],
+      "coverage": 1
+    },
+    "expected": {
+      "level": "NOT_READY",
+      "reasons": [
+        "CRITICAL_FAILS"
+      ]
+    }
+  },
+  {
+    "name": "chỉ tính 5 lần gần nhất",
+    "input": {
+      "attempts": [
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 23,
+          "passScore": 21,
+          "failedByCritical": false
+        },
+        {
+          "correctCount": 10,
+          "passScore": 21,
+          "failedByCritical": true
+        },
+        {
+          "correctCount": 10,
+          "passScore": 21,
+          "failedByCritical": true
+        }
+      ],
+      "coverage": 0.95
+    },
+    "expected": {
+      "level": "READY",
+      "reasons": []
+    }
+  }
+]

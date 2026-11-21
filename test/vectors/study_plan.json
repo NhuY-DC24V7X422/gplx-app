@@ -1,0 +1,121 @@
+[
+  {
+    "name": "còn 13 ngày",
+    "input": {
+      "unseen": 200,
+      "due": 5,
+      "examDate": "2026-11-02",
+      "today": "2026-10-20",
+      "dailyNewGoal": 20
+    },
+    "expected": {
+      "daysLeft": 13,
+      "newToday": 20,
+      "reviewToday": 5,
+      "suggestMockExam": false,
+      "askUpdateExamDate": false
+    }
+  },
+  {
+    "name": "còn 2 ngày",
+    "input": {
+      "unseen": 50,
+      "due": 0,
+      "examDate": "2026-10-22",
+      "today": "2026-10-20",
+      "dailyNewGoal": 20
+    },
+    "expected": {
+      "daysLeft": 2,
+      "newToday": 50,
+      "reviewToday": 0,
+      "suggestMockExam": true,
+      "askUpdateExamDate": false
+    }
+  },
+  {
+    "name": "chưa có ngày thi",
+    "input": {
+      "unseen": 100,
+      "due": 3,
+      "examDate": null,
+      "today": "2026-10-20",
+      "dailyNewGoal": 20
+    },
+    "expected": {
+      "daysLeft": null,
+      "newToday": 20,
+      "reviewToday": 3,
+      "suggestMockExam": false,
+      "askUpdateExamDate": false
+    }
+  },
+  {
+    "name": "ngày thi đã qua",
+    "input": {
+      "unseen": 100,
+      "due": 0,
+      "examDate": "2026-10-10",
+      "today": "2026-10-20",
+      "dailyNewGoal": 20
+    },
+    "expected": {
+      "daysLeft": null,
+      "newToday": 20,
+      "reviewToday": 0,
+      "suggestMockExam": false,
+      "askUpdateExamDate": true
+    }
+  },
+  {
+    "name": "đã học hết",
+    "input": {
+      "unseen": 0,
+      "due": 7,
+      "examDate": "2026-11-19",
+      "today": "2026-10-20",
+      "dailyNewGoal": 20
+    },
+    "expected": {
+      "daysLeft": 30,
+      "newToday": 0,
+      "reviewToday": 7,
+      "suggestMockExam": true,
+      "askUpdateExamDate": false
+    }
+  },
+  {
+    "name": "thi hôm nay",
+    "input": {
+      "unseen": 30,
+      "due": 0,
+      "examDate": "2026-10-20",
+      "today": "2026-10-20",
+      "dailyNewGoal": 20
+    },
+    "expected": {
+      "daysLeft": 1,
+      "newToday": 30,
+      "reviewToday": 0,
+      "suggestMockExam": true,
+      "askUpdateExamDate": false
+    }
+  },
+  {
+    "name": "số câu mới không vượt quá số câu chưa học",
+    "input": {
+      "unseen": 8,
+      "due": 0,
+      "examDate": null,
+      "today": "2026-10-20",
+      "dailyNewGoal": 20
+    },
+    "expected": {
+      "daysLeft": null,
+      "newToday": 8,
+      "reviewToday": 0,
+      "suggestMockExam": false,
+      "askUpdateExamDate": false
+    }
+  }
+]

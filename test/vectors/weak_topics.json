@@ -1,0 +1,330 @@
+[
+  {
+    "name": "phân tích chủ đề",
+    "input": {
+      "categories": [
+        "RULES",
+        "SIGNS",
+        "CULTURE",
+        "DRIVING"
+      ],
+      "events": [
+        {
+          "categoryCode": "RULES",
+          "isCorrect": true,
+          "answeredAt": "2026-10-01T01:00:00.000Z"
+        },
+        {
+          "categoryCode": "RULES",
+          "isCorrect": true,
+          "answeredAt": "2026-10-01T01:01:00.000Z"
+        },
+        {
+          "categoryCode": "RULES",
+          "isCorrect": true,
+          "answeredAt": "2026-10-01T01:02:00.000Z"
+        },
+        {
+          "categoryCode": "RULES",
+          "isCorrect": true,
+          "answeredAt": "2026-10-01T01:03:00.000Z"
+        },
+        {
+          "categoryCode": "RULES",
+          "isCorrect": true,
+          "answeredAt": "2026-10-01T01:04:00.000Z"
+        },
+        {
+          "categoryCode": "RULES",
+          "isCorrect": true,
+          "answeredAt": "2026-10-01T01:05:00.000Z"
+        },
+        {
+          "categoryCode": "RULES",
+          "isCorrect": true,
+          "answeredAt": "2026-10-01T01:06:00.000Z"
+        },
+        {
+          "categoryCode": "RULES",
+          "isCorrect": true,
+          "answeredAt": "2026-10-01T01:07:00.000Z"
+        },
+        {
+          "categoryCode": "RULES",
+          "isCorrect": true,
+          "answeredAt": "2026-10-01T01:08:00.000Z"
+        },
+        {
+          "categoryCode": "RULES",
+          "isCorrect": false,
+          "answeredAt": "2026-10-01T01:09:00.000Z"
+        },
+        {
+          "categoryCode": "RULES",
+          "isCorrect": false,
+          "answeredAt": "2026-10-01T01:10:00.000Z"
+        },
+        {
+          "categoryCode": "RULES",
+          "isCorrect": false,
+          "answeredAt": "2026-10-01T01:11:00.000Z"
+        },
+        {
+          "categoryCode": "SIGNS",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:00:00.000Z"
+        },
+        {
+          "categoryCode": "SIGNS",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:01:00.000Z"
+        },
+        {
+          "categoryCode": "SIGNS",
+          "isCorrect": false,
+          "answeredAt": "2026-10-02T01:02:00.000Z"
+        },
+        {
+          "categoryCode": "SIGNS",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:03:00.000Z"
+        },
+        {
+          "categoryCode": "SIGNS",
+          "isCorrect": false,
+          "answeredAt": "2026-10-02T01:04:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": false,
+          "answeredAt": "2026-10-03T01:00:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": false,
+          "answeredAt": "2026-10-03T01:01:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": false,
+          "answeredAt": "2026-10-03T01:02:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": false,
+          "answeredAt": "2026-10-03T01:03:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": false,
+          "answeredAt": "2026-10-03T01:04:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": false,
+          "answeredAt": "2026-10-03T01:05:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": false,
+          "answeredAt": "2026-10-03T01:06:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": false,
+          "answeredAt": "2026-10-03T01:07:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": false,
+          "answeredAt": "2026-10-03T01:08:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": false,
+          "answeredAt": "2026-10-03T01:09:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:10:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:11:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:12:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:13:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:14:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:15:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:16:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:17:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:18:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:19:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:20:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:21:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:22:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:23:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:24:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:25:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:26:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:27:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:28:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:29:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:30:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:31:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:32:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:33:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:34:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:35:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:36:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:37:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:38:00.000Z"
+        },
+        {
+          "categoryCode": "CULTURE",
+          "isCorrect": true,
+          "answeredAt": "2026-10-03T01:39:00.000Z"
+        }
+      ]
+    },
+    "expected": {
+      "RULES": {
+        "answered": 12,
+        "accuracy": 0.75,
+        "enoughData": true,
+        "weight": 0.35,
+        "weak": true
+      },
+      "SIGNS": {
+        "answered": 5,
+        "accuracy": 0.6,
+        "enoughData": false,
+        "weight": 1,
+        "weak": false
+      },
+      "CULTURE": {
+        "answered": 30,
+        "accuracy": 1,
+        "enoughData": true,
+        "weight": 0.1,
+        "weak": false
+      },
+      "DRIVING": {
+        "answered": 0,
+        "accuracy": null,
+        "enoughData": false,
+        "weight": 1,
+        "weak": false
+      }
+    }
+  }
+]
