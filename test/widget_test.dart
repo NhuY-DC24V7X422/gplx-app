@@ -104,7 +104,7 @@ void main() {
 
       // Chuyển được sang 4 tab còn lại
       final tabs = {
-        'Học': 'Học theo chủ đề, câu điểm liệt, sổ câu sai',
+        'Học': 'Học theo chủ đề',
         'Thi thử': 'Thi thử theo đề, xem lịch sử',
         'Tra cứu': 'Tra cứu biển báo, mức phạt',
         'Cá nhân': 'Cài đặt và thông tin ứng dụng',

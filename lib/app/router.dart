@@ -8,6 +8,8 @@ import '../features/lookup/lookup_screen.dart';
 import '../features/onboarding/onboarding_screen.dart';
 import '../features/shell/home_shell.dart';
 import '../features/splash/splash_screen.dart';
+import '../features/study/practice_screen.dart';
+import '../features/study/question_list_screen.dart';
 import '../features/study/study_screen.dart';
 
 // Key của navigator gốc. Các màn hình mở toàn màn hình (làm bài, kết quả...)
@@ -21,7 +23,7 @@ GoRouter buildRouter() {
     navigatorKey: rootNavigatorKey,
     initialLocation: '/splash',
     routes: [
-      // 2 màn hình toàn màn hình, không có thanh tab ở dưới
+      // Các màn hình toàn màn hình, không có thanh tab ở dưới
       GoRoute(
         path: '/splash',
         builder: (context, state) => const SplashScreen(),
@@ -29,6 +31,20 @@ GoRouter buildRouter() {
       GoRoute(
         path: '/onboarding',
         builder: (context, state) => const OnboardingScreen(),
+      ),
+      // danh sách câu hỏi: nhận QuestionListArgs qua `extra`
+      GoRoute(
+        path: '/questions',
+        parentNavigatorKey: rootNavigatorKey,
+        builder: (context, state) =>
+            QuestionListScreen(args: state.extra as QuestionListArgs),
+      ),
+      // luyện từng câu: nhận PracticeArgs qua `extra` khi gọi context.push
+      GoRoute(
+        path: '/practice',
+        parentNavigatorKey: rootNavigatorKey,
+        builder: (context, state) =>
+            PracticeScreen(args: state.extra as PracticeArgs),
       ),
 
       // StatefulShellRoute: mỗi tab là 1 nhánh, chuyển tab không mất trạng thái

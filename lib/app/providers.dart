@@ -4,6 +4,7 @@ import '../core/database/app_database.dart';
 import '../core/sync/sync_service.dart';
 import '../data/models/catalog_models.dart';
 import '../data/repositories/catalog_repository.dart';
+import '../data/repositories/progress_repository.dart';
 import '../data/repositories/settings_repository.dart';
 
 // Riverpod "provider" = nơi tạo và cung cấp một đối tượng cho cả app.
@@ -41,4 +42,47 @@ final licenseClassProvider = Provider<String>((ref) {
 // Danh sách hạng bằng A1, A, B (đọc từ SQLite) để hiện ở màn hình chọn hạng
 final licenseClassesProvider = FutureProvider<List<LicenseClassInfo>>((ref) {
   return ref.watch(catalogRepositoryProvider).licenseClasses();
+});
+
+// ----- Tiến độ học -----
+
+final progressRepositoryProvider = Provider<ProgressRepository>((ref) {
+  return ProgressRepository(ref.watch(databaseProvider));
+});
+
+// Tiến độ 6 chủ đề của hạng đang chọn (đổi hạng thì tự tính lại)
+final topicProgressProvider = StreamProvider<List<TopicProgress>>((ref) {
+  final licenseClass = ref.watch(licenseClassProvider);
+  return ref.watch(progressRepositoryProvider).watchTopicProgress(licenseClass);
+});
+
+// Id các câu trong sổ câu sai
+final wrongBookIdsProvider = StreamProvider<List<String>>((ref) {
+  final licenseClass = ref.watch(licenseClassProvider);
+  return ref.watch(progressRepositoryProvider).watchWrongBookIds(licenseClass);
+});
+
+// Id các câu đã lưu
+final bookmarkIdsProvider = StreamProvider<List<String>>((ref) {
+  final licenseClass = ref.watch(licenseClassProvider);
+  return ref.watch(progressRepositoryProvider).watchBookmarkIds(licenseClass);
+});
+
+// Tất cả câu hỏi của hạng đang chọn (dùng để lọc câu điểm liệt, câu theo chủ đề)
+final classQuestionsProvider = FutureProvider<List<QuestionItem>>((ref) {
+  final licenseClass = ref.watch(licenseClassProvider);
+  return ref.watch(catalogRepositoryProvider).questionsForClass(licenseClass);
+});
+
+// Tiến độ từng câu { id câu: tiến độ }
+final progressMapProvider = StreamProvider<Map<String, ProgressRow>>((ref) {
+  return ref.watch(progressRepositoryProvider).watchProgressMap();
+});
+
+// Câu có đang được lưu không. family: mỗi id câu có 1 provider riêng.
+final bookmarkedProvider = StreamProvider.family<bool, String>((
+  ref,
+  questionId,
+) {
+  return ref.watch(progressRepositoryProvider).watchBookmarked(questionId);
 });

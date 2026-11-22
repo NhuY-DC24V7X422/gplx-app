@@ -216,6 +216,19 @@ class CatalogRepository {
     return row == null ? null : QuestionItem.fromRow(row);
   }
 
+  // Lấy nhiều câu theo danh sách id, giữ đúng thứ tự của danh sách
+  Future<List<QuestionItem>> questionsByIds(List<String> ids) async {
+    if (ids.isEmpty) return [];
+    final rows = await (db.select(
+      db.questions,
+    )..where((t) => t.id.isIn(ids))).get();
+    final byId = {for (final r in rows) r.id: QuestionItem.fromRow(r)};
+    return [
+      for (final id in ids)
+        if (byId[id] != null) byId[id]!,
+    ];
+  }
+
   // đếm số câu trong máy (dùng để kiểm tra đã nạp gói chưa)
   Future<int> countQuestions() async {
     final count = db.questions.id.count();
