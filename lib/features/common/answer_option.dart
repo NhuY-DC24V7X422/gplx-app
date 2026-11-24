@@ -5,6 +5,7 @@ import '../../app/theme.dart';
 // Trạng thái hiển thị của 1 đáp án
 enum OptionState {
   idle, // chưa chọn
+  selected, // đang chọn (lúc thi, chưa biết đúng sai)
   correct, // đáp án đúng (sau khi đã trả lời)
   wrong, // đáp án người học chọn nhưng sai
 }
@@ -32,7 +33,11 @@ class AnswerOption extends StatelessWidget {
     Color border = colors.outlineVariant;
     Color? background;
     IconData? icon;
-    if (state == OptionState.correct) {
+    if (state == OptionState.selected) {
+      border = colors.primary;
+      background = colors.primary.withValues(alpha: 0.10);
+      icon = Icons.radio_button_checked;
+    } else if (state == OptionState.correct) {
       border = correctGreen;
       background = correctGreen.withValues(alpha: 0.12);
       icon = Icons.check_circle;

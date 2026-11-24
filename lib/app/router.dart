@@ -3,6 +3,9 @@ import 'package:go_router/go_router.dart';
 
 import '../features/account/account_screen.dart';
 import '../features/exam/exam_hub_screen.dart';
+import '../features/exam/exam_result_screen.dart';
+import '../features/exam/exam_review_screen.dart';
+import '../features/exam/exam_run_screen.dart';
 import '../features/home/home_screen.dart';
 import '../features/lookup/lookup_screen.dart';
 import '../features/onboarding/onboarding_screen.dart';
@@ -45,6 +48,26 @@ GoRouter buildRouter() {
         parentNavigatorKey: rootNavigatorKey,
         builder: (context, state) =>
             PracticeScreen(args: state.extra as PracticeArgs),
+      ),
+      // làm bài thi: nhận id bài đang làm qua `extra`
+      GoRoute(
+        path: '/exam/run',
+        parentNavigatorKey: rootNavigatorKey,
+        builder: (context, state) =>
+            ExamRunScreen(sessionId: state.extra as String),
+      ),
+      // kết quả: nhận id bài đã nộp; xem lại: nhận ExamReviewArgs
+      GoRoute(
+        path: '/exam/result',
+        parentNavigatorKey: rootNavigatorKey,
+        builder: (context, state) =>
+            ExamResultScreen(attemptId: state.extra as String),
+      ),
+      GoRoute(
+        path: '/exam/review',
+        parentNavigatorKey: rootNavigatorKey,
+        builder: (context, state) =>
+            ExamReviewScreen(args: state.extra as ExamReviewArgs),
       ),
 
       // StatefulShellRoute: mỗi tab là 1 nhánh, chuyển tab không mất trạng thái

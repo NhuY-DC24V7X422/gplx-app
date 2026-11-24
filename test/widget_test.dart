@@ -105,7 +105,7 @@ void main() {
       // Chuyển được sang 4 tab còn lại
       final tabs = {
         'Học': 'Học theo chủ đề',
-        'Thi thử': 'Thi thử theo đề, xem lịch sử',
+        'Thi thử': 'Chọn kiểu đề',
         'Tra cứu': 'Tra cứu biển báo, mức phạt',
         'Cá nhân': 'Cài đặt và thông tin ứng dụng',
       };

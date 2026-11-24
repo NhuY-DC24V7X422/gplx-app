@@ -4,6 +4,7 @@ import '../core/database/app_database.dart';
 import '../core/sync/sync_service.dart';
 import '../data/models/catalog_models.dart';
 import '../data/repositories/catalog_repository.dart';
+import '../data/repositories/exam_repository.dart';
 import '../data/repositories/progress_repository.dart';
 import '../data/repositories/settings_repository.dart';
 
@@ -85,4 +86,26 @@ final bookmarkedProvider = StreamProvider.family<bool, String>((
   questionId,
 ) {
   return ref.watch(progressRepositoryProvider).watchBookmarked(questionId);
+});
+
+// ----- Thi thử -----
+
+final examRepositoryProvider = Provider<ExamRepository>((ref) {
+  return ExamRepository(
+    ref.watch(databaseProvider),
+    ref.watch(catalogRepositoryProvider),
+    ref.watch(progressRepositoryProvider),
+  );
+});
+
+// Bài thi đang làm dở của hạng đang chọn (null = không có)
+final activeExamProvider = StreamProvider<ExamSessionData?>((ref) {
+  final licenseClass = ref.watch(licenseClassProvider);
+  return ref.watch(examRepositoryProvider).watchActive(licenseClass);
+});
+
+// Lịch sử thi của hạng đang chọn
+final examHistoryProvider = StreamProvider<List<AttemptData>>((ref) {
+  final licenseClass = ref.watch(licenseClassProvider);
+  return ref.watch(examRepositoryProvider).watchHistory(licenseClass);
 });
