@@ -37,6 +37,11 @@ void main() {
   testWidgets('Thi thử: tạo đề, làm tiếp bài dở, nộp bài, xem kết quả', (
     tester,
   ) async {
+    // màn hình cao để câu có hình vẫn thấy hết, khỏi phải cuộn
+    tester.view.physicalSize = const Size(800, 1800);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+
     tester.platformDispatcher.defaultRouteNameTestValue = '/';
     addTearDown(tester.platformDispatcher.clearDefaultRouteNameTestValue);
 
@@ -107,9 +112,15 @@ void main() {
     await tester.tap(find.widgetWithText(FilledButton, 'Nộp bài'));
     await pumpUntilFound(tester, 'TRƯỢT');
     expect(find.text('Đúng 1/25 câu'), findsOneWidget);
-    // câu điểm liệt bị bỏ trống nên lý do trượt là điểm liệt
+    // câu điểm liệt bị bỏ trống nên lý do trượt là điểm liệt.
+    // Đề xáo ngẫu nhiên: nếu câu 1 (đã làm đúng) là câu điểm liệt
+    // thì trượt vì thiếu điểm.
     expect(
-      find.text('Bạn làm sai câu điểm liệt nên bị trượt.'),
+      find.text(
+        first.isCritical
+            ? 'Cần đúng ít nhất 21 câu để đậu.'
+            : 'Bạn làm sai câu điểm liệt nên bị trượt.',
+      ),
       findsOneWidget,
     );
 

@@ -2,7 +2,9 @@ import 'package:drift/drift.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../core/database/app_database.dart';
+import '../../core/utils/vn_date.dart';
 import '../../domain/replay.dart';
+import '../../domain/weak_topics.dart';
 import '../models/catalog_models.dart';
 
 const _uuid = Uuid();
@@ -207,6 +209,64 @@ class ProgressRepository {
         )
         .watch()
         .map((rows) => rows.map((r) => r.read<String>('id')).toList());
+  }
+
+  // ---------------------------------------------------------------
+  // Số liệu cho Trang chủ và Thống kê
+  // ---------------------------------------------------------------
+
+  // Số câu đã trả lời mỗi ngày (ngày theo giờ VN), vd { '2026-10-20': 15 }
+  // Dùng để tính chuỗi ngày học.
+  Future<Map<String, int>> dayCounts() async {
+    final events = await db.select(db.answerEvents).get();
+    final counts = <String, int>{};
+    for (final e in events) {
+      final day = vnDay(e.answeredAt);
+      counts[day] = (counts[day] ?? 0) + 1;
+    }
+    return counts;
+  }
+
+  // Các câu đến hạn ôn (hạn <= hôm nay) của hạng này, câu quá hạn lâu nhất đứng trước
+  Future<List<String>> dueQuestionIds(String licenseClass, String today) async {
+    final rows = await db
+        .customSelect(
+          'SELECT p.question_id AS id FROM question_progress p '
+          'JOIN questions q ON q.id = p.question_id '
+          "WHERE q.status = 'active' AND q.license_classes LIKE ? "
+          'AND p.due_date IS NOT NULL AND p.due_date <= ? '
+          'ORDER BY p.due_date, q.number',
+          variables: [
+            Variable.withString('%,$licenseClass,%'),
+            Variable.withString(today),
+          ],
+        )
+        .get();
+    return rows.map((r) => r.read<String>('id')).toList();
+  }
+
+  // Lịch sử trả lời kèm chủ đề của từng câu (của hạng này), để tìm chủ đề yếu
+  Future<List<TopicEvent>> topicEvents(String licenseClass) async {
+    final query =
+        db.select(db.answerEvents).join([
+          innerJoin(
+            db.questions,
+            db.questions.id.equalsExp(db.answerEvents.questionId),
+          ),
+        ])..where(
+          db.questions.status.equals('active') &
+              db.questions.licenseClasses.like('%,$licenseClass,%'),
+        );
+
+    final rows = await query.get();
+    return [
+      for (final r in rows)
+        TopicEvent(
+          categoryCode: r.readTable(db.questions).categoryCode,
+          isCorrect: r.readTable(db.answerEvents).isCorrect,
+          answeredAt: r.readTable(db.answerEvents).answeredAt,
+        ),
+    ];
   }
 
   // ---------------------------------------------------------------

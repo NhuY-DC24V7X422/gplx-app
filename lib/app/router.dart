@@ -9,6 +9,7 @@ import '../features/exam/exam_run_screen.dart';
 import '../features/home/home_screen.dart';
 import '../features/lookup/lookup_screen.dart';
 import '../features/onboarding/onboarding_screen.dart';
+import '../features/progress/stats_screen.dart';
 import '../features/shell/home_shell.dart';
 import '../features/splash/splash_screen.dart';
 import '../features/study/practice_screen.dart';
@@ -48,6 +49,12 @@ GoRouter buildRouter() {
         parentNavigatorKey: rootNavigatorKey,
         builder: (context, state) =>
             PracticeScreen(args: state.extra as PracticeArgs),
+      ),
+      // thống kê tiến độ, mở từ Trang chủ
+      GoRoute(
+        path: '/stats',
+        parentNavigatorKey: rootNavigatorKey,
+        builder: (context, state) => const StatsScreen(),
       ),
       // làm bài thi: nhận id bài đang làm qua `extra`
       GoRoute(
