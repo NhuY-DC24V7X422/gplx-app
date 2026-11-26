@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../app/providers.dart';
 
-// Màn hình khởi động: nạp bộ câu hỏi đóng kèm (chỉ lần đầu) rồi chuyển màn hình:
+// Màn hình khởi động: nạp bộ câu hỏi đóng kèm (chỉ lần đầu), tải dữ liệu mới nếu có mạng, rồi chuyển màn hình:
 // - chưa thiết lập ban đầu -> Onboarding
 // - đã thiết lập -> Trang chủ
 //
@@ -29,6 +29,11 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
     setState(() => _error = null);
     try {
       await ref.read(syncServiceProvider).ensureBundledCatalog();
+      // Có mạng thì tải dữ liệu mới. Lỗi (mất mạng, máy chủ tắt) thì bỏ qua,
+      // vẫn học bằng dữ liệu đang có trong máy.
+      try {
+        await ref.read(syncServiceProvider).checkForUpdate();
+      } catch (_) {}
       final settings = await ref.read(settingsRepositoryProvider).load();
 
       // widget có thể đã bị đóng trong lúc chờ -> kiểm tra trước khi chuyển màn hình

@@ -27,7 +27,10 @@ final settingsRepositoryProvider = Provider<SettingsRepository>((ref) {
 });
 
 final syncServiceProvider = Provider<SyncService>((ref) {
-  return SyncService(catalog: ref.watch(catalogRepositoryProvider));
+  return SyncService(
+    catalog: ref.watch(catalogRepositoryProvider),
+    progress: ref.watch(progressRepositoryProvider),
+  );
 });
 
 // Cài đặt hiện tại. StreamProvider: cài đặt đổi thì màn hình đang watch tự vẽ lại.

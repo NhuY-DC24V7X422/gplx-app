@@ -127,6 +127,22 @@ class ProgressRepository {
     return s;
   }
 
+  // Tính lại tiến độ các câu vừa bị đổi đáp án (gọi sau khi tải gói mới).
+  // Câu chưa làm lần nào thì bỏ qua, không tạo dòng tiến độ rỗng.
+  Future<void> replayQuestions(List<String> questionIds) async {
+    await db.transaction(() async {
+      for (final id in questionIds) {
+        final firstAnswer =
+            await (db.select(db.answerEvents)
+                  ..where((e) => e.questionId.equals(id))
+                  ..limit(1))
+                .getSingleOrNull();
+        if (firstAnswer == null) continue;
+        await _replayQuestion(id);
+      }
+    });
+  }
+
   // Mã của điện thoại này: tạo 1 lần rồi lưu trong bảng meta
   Future<String> _deviceId() async {
     final saved = await db.getMeta('deviceId');
