@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/database/app_database.dart';
 import '../features/account/account_screen.dart';
 import '../features/exam/exam_hub_screen.dart';
 import '../features/exam/exam_result_screen.dart';
 import '../features/exam/exam_review_screen.dart';
 import '../features/exam/exam_run_screen.dart';
 import '../features/home/home_screen.dart';
+import '../features/lookup/flashcard_screen.dart';
 import '../features/lookup/lookup_screen.dart';
+import '../features/lookup/sign_detail_screen.dart';
 import '../features/onboarding/onboarding_screen.dart';
 import '../features/progress/stats_screen.dart';
 import '../features/shell/home_shell.dart';
@@ -55,6 +58,18 @@ GoRouter buildRouter() {
         path: '/stats',
         parentNavigatorKey: rootNavigatorKey,
         builder: (context, state) => const StatsScreen(),
+      ),
+      // tra cứu: chi tiết biển báo (nhận biển qua `extra`) và thẻ ghi nhớ
+      GoRoute(
+        path: '/sign',
+        parentNavigatorKey: rootNavigatorKey,
+        builder: (context, state) =>
+            SignDetailScreen(sign: state.extra as TrafficSign),
+      ),
+      GoRoute(
+        path: '/flashcards',
+        parentNavigatorKey: rootNavigatorKey,
+        builder: (context, state) => const FlashcardScreen(),
       ),
       // làm bài thi: nhận id bài đang làm qua `extra`
       GoRoute(

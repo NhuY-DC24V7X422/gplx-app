@@ -229,6 +229,22 @@ class CatalogRepository {
     ];
   }
 
+  // Biển báo, xếp theo mã biển
+  Future<List<TrafficSign>> trafficSigns() {
+    return (db.select(db.trafficSigns)
+          ..where((t) => t.status.equals('active'))
+          ..orderBy([(t) => OrderingTerm(expression: t.code)]))
+        .get();
+  }
+
+  // Mức phạt, giữ thứ tự theo id (các lỗi giống nhau nằm cạnh nhau)
+  Future<List<Penalty>> penalties() {
+    return (db.select(db.penalties)
+          ..where((t) => t.status.equals('active'))
+          ..orderBy([(t) => OrderingTerm(expression: t.id)]))
+        .get();
+  }
+
   // đếm số câu trong máy (dùng để kiểm tra đã nạp gói chưa)
   Future<int> countQuestions() async {
     final count = db.questions.id.count();

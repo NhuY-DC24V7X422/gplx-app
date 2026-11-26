@@ -106,7 +106,7 @@ void main() {
       final tabs = {
         'Học': 'Học theo chủ đề',
         'Thi thử': 'Chọn kiểu đề',
-        'Tra cứu': 'Tra cứu biển báo, mức phạt',
+        'Tra cứu': 'Mức phạt',
         'Cá nhân': 'Cài đặt và thông tin ứng dụng',
       };
       for (final entry in tabs.entries) {

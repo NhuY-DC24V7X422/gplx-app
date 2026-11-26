@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:drift/drift.dart';
 import 'package:uuid/uuid.dart';
 
@@ -305,5 +307,31 @@ class ProgressRepository {
             clientUpdatedAt: _now().toUtc(),
           ),
         );
+  }
+
+  // ----- Thẻ ghi nhớ biển báo -----
+  // Danh sách id biển "đã nhớ" ít dữ liệu nên lưu dạng JSON trong bảng Meta
+
+  static const _rememberedKey = 'rememberedSigns';
+
+  Set<String> _decodeIds(String? json) {
+    if (json == null) return {};
+    return (jsonDecode(json) as List).cast<String>().toSet();
+  }
+
+  Stream<Set<String>> watchRememberedSigns() {
+    final query = db.select(db.meta)
+      ..where((m) => m.key.equals(_rememberedKey));
+    return query.watchSingleOrNull().map((row) => _decodeIds(row?.value));
+  }
+
+  Future<void> setSignRemembered(String signId, bool remembered) async {
+    final ids = _decodeIds(await db.getMeta(_rememberedKey));
+    if (remembered) {
+      ids.add(signId);
+    } else {
+      ids.remove(signId);
+    }
+    await db.setMeta(_rememberedKey, jsonEncode(ids.toList()));
   }
 }

@@ -273,6 +273,7 @@ class AppDatabase extends _$AppDatabase {
       await delete(bookmarks).go();
       await delete(examSessions).go();
       await delete(examAttempts).go();
+      await setMeta('rememberedSigns', null);
       await setMeta('syncCursor', null);
       await setMeta('lastSyncAt', null);
     });

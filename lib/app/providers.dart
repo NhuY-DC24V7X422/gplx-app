@@ -109,3 +109,18 @@ final examHistoryProvider = StreamProvider<List<AttemptData>>((ref) {
   final licenseClass = ref.watch(licenseClassProvider);
   return ref.watch(examRepositoryProvider).watchHistory(licenseClass);
 });
+
+// ----- Tra cứu -----
+
+final trafficSignsProvider = FutureProvider<List<TrafficSign>>((ref) {
+  return ref.watch(catalogRepositoryProvider).trafficSigns();
+});
+
+final penaltiesProvider = FutureProvider<List<Penalty>>((ref) {
+  return ref.watch(catalogRepositoryProvider).penalties();
+});
+
+// Id các biển đã đánh dấu "đã nhớ" ở thẻ ghi nhớ
+final rememberedSignsProvider = StreamProvider<Set<String>>((ref) {
+  return ref.watch(progressRepositoryProvider).watchRememberedSigns();
+});
