@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/database/app_database.dart';
+import '../core/notifications/reminder_service.dart';
 import '../core/sync/sync_service.dart';
 import '../data/models/catalog_models.dart';
 import '../data/repositories/catalog_repository.dart';
@@ -130,4 +131,8 @@ final rememberedSignsProvider = StreamProvider<Set<String>>((ref) {
 // Phiên bản bộ dữ liệu đang có trong máy (hiện ở tab Cá nhân)
 final catalogVersionProvider = FutureProvider<int>((ref) {
   return ref.watch(catalogRepositoryProvider).catalogVersion();
+});
+// Nhắc học bằng thông báo cục bộ
+final reminderServiceProvider = Provider<ReminderService>((ref) {
+  return ReminderService();
 });

@@ -92,6 +92,29 @@ class AccountScreen extends ConsumerWidget {
             ),
           const Divider(),
 
+          _sectionTitle(context, 'Nhắc học'),
+          SwitchListTile(
+            secondary: const Icon(Icons.notifications_outlined),
+            title: const Text('Nhắc học mỗi ngày'),
+            subtitle: Text(
+              settings.reminderTime == null
+                  ? 'Đang tắt'
+                  : 'Lúc ${settings.reminderTime} mỗi ngày',
+            ),
+            value: settings.reminderTime != null,
+            onChanged: (on) => on
+                ? _turnOnReminder(context, ref, settings)
+                : _turnOffReminder(ref),
+          ),
+          if (settings.reminderTime != null)
+            ListTile(
+              leading: const Icon(Icons.schedule),
+              title: const Text('Đổi giờ nhắc'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => _turnOnReminder(context, ref, settings),
+            ),
+          const Divider(),
+
           _sectionTitle(context, 'Ứng dụng'),
           ListTile(
             leading: const Icon(Icons.info_outline),
@@ -153,6 +176,60 @@ class AccountScreen extends ConsumerWidget {
     );
     if (picked == null || picked == settings.licenseClass) return;
     await ref.read(settingsRepositoryProvider).setLicenseClass(picked);
+  }
+
+  // Chọn giờ rồi bật nhắc học (cũng dùng để đổi giờ nhắc)
+  Future<void> _turnOnReminder(
+    BuildContext context,
+    WidgetRef ref,
+    AppSettings settings,
+  ) async {
+    // giờ đang đặt, chưa đặt thì gợi ý 20:00
+    final parts = (settings.reminderTime ?? '20:00').split(':');
+    final picked = await showTimePicker(
+      context: context,
+      initialTime: TimeOfDay(
+        hour: int.parse(parts[0]),
+        minute: int.parse(parts[1]),
+      ),
+      helpText: 'Chọn giờ nhắc học',
+      // luôn dùng kiểu 24 giờ (gõ 07 là 7 giờ sáng, không bị hiểu thành 7 giờ tối)
+      builder: (context, child) => MediaQuery(
+        data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: true),
+        child: child!,
+      ),
+    );
+    if (picked == null) return; // bấm Hủy
+
+    final ok = await ref
+        .read(reminderServiceProvider)
+        .turnOn(picked.hour, picked.minute);
+    if (!context.mounted) return;
+    final messenger = ScaffoldMessenger.of(context);
+    if (!ok) {
+      messenger.showSnackBar(
+        const SnackBar(
+          content: Text(
+            'Bạn chưa cho phép app hiện thông báo. '
+            'Hãy bật trong Cài đặt của điện thoại.',
+          ),
+        ),
+      );
+      return;
+    }
+
+    // lưu dạng 'HH:mm', vd 07:05
+    final hh = picked.hour.toString().padLeft(2, '0');
+    final mm = picked.minute.toString().padLeft(2, '0');
+    await ref.read(settingsRepositoryProvider).setReminderTime('$hh:$mm');
+    messenger.showSnackBar(
+      SnackBar(content: Text('Sẽ nhắc bạn lúc $hh:$mm mỗi ngày')),
+    );
+  }
+
+  Future<void> _turnOffReminder(WidgetRef ref) async {
+    await ref.read(reminderServiceProvider).turnOff();
+    await ref.read(settingsRepositoryProvider).setReminderTime(null);
   }
 
   // Lịch chọn ngày thi: từ hôm nay đến 1 năm sau

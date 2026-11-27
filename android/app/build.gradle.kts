@@ -6,12 +6,14 @@ plugins {
 
 android {
     namespace = "vn.edu.ctu.gplx_app"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 37 // thư viện thông báo yêu cầu từ 37 trở lên
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+        // thư viện thông báo cần bật desugaring để chạy trên Android cũ
+        isCoreLibraryDesugaringEnabled = true
     }
 
     defaultConfig {
@@ -46,4 +48,7 @@ kotlin {
 
 flutter {
     source = "../.."
+}
+dependencies {
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 }

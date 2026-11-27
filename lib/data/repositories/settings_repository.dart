@@ -7,12 +7,14 @@ class AppSettings {
     required this.licenseClass,
     required this.examDate,
     required this.dailyNewGoal,
+    required this.reminderTime,
   });
 
   final bool onboarded; // đã qua màn hình thiết lập ban đầu chưa
   final String licenseClass; // 'A1' | 'A' | 'B'
   final String? examDate; // ngày thi 'YYYY-MM-DD', null = chưa chọn
   final int dailyNewGoal; // số câu mới muốn học mỗi ngày (khi chưa có ngày thi)
+  final String? reminderTime; // giờ nhắc học 'HH:mm', null = tắt nhắc học
 
   // giá trị mặc định khi mới cài app
   static const defaults = AppSettings(
@@ -20,6 +22,7 @@ class AppSettings {
     licenseClass: 'A1',
     examDate: null,
     dailyNewGoal: 20,
+    reminderTime: null, // thời gian nhắc học, null = chưa chọn
   );
 }
 
@@ -34,6 +37,7 @@ class SettingsRepository {
     'licenseClass',
     'examDate',
     'dailyNewGoal',
+    'reminderTime',
   ];
 
   // đọc 1 lần
@@ -61,6 +65,7 @@ class SettingsRepository {
       licenseClass: m['licenseClass'] ?? d.licenseClass,
       examDate: m['examDate'],
       dailyNewGoal: int.tryParse(m['dailyNewGoal'] ?? '') ?? d.dailyNewGoal,
+      reminderTime: m['reminderTime'],
     );
   }
 
@@ -75,4 +80,9 @@ class SettingsRepository {
 
   Future<void> setDailyNewGoal(int value) =>
       db.setMeta('dailyNewGoal', '$value');
+
+
+    // null = tắt nhắc học
+  Future<void> setReminderTime(String? value) =>
+      db.setMeta('reminderTime', value);
 }
