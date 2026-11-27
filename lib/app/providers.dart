@@ -127,3 +127,7 @@ final penaltiesProvider = FutureProvider<List<Penalty>>((ref) {
 final rememberedSignsProvider = StreamProvider<Set<String>>((ref) {
   return ref.watch(progressRepositoryProvider).watchRememberedSigns();
 });
+// Phiên bản bộ dữ liệu đang có trong máy (hiện ở tab Cá nhân)
+final catalogVersionProvider = FutureProvider<int>((ref) {
+  return ref.watch(catalogRepositoryProvider).catalogVersion();
+});

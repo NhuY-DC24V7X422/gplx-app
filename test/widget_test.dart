@@ -107,7 +107,7 @@ void main() {
         'Học': 'Học theo chủ đề',
         'Thi thử': 'Chọn kiểu đề',
         'Tra cứu': 'Mức phạt',
-        'Cá nhân': 'Cài đặt và thông tin ứng dụng',
+        'Cá nhân': 'Số câu mới mỗi ngày',
       };
       for (final entry in tabs.entries) {
         await tester.tap(
